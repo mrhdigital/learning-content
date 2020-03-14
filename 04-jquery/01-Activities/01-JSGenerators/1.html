@@ -12,10 +12,13 @@
     <!--We now create a new javaScript script. -->
     <script>
     // Inside, we latch onto the "emtyDiv" using the javascript ".getElementById" selector.
-    var parentDOM = document.getElementById('empty-div');
+    var targetDiv = document.getElementById('empty-div');
 
     //We then use the javaScript method ".textContent" to change the content to "Hello Friends!"
-    parentDOM.textContent = "Hello Friends!";
+    targetDiv.textContent = "Hello Friends!";
+   // if we try to add to the div using the same methos .textContent, it just replaces the old content.
+   targetDiv.textContent = "Pleasure to meet you";
+
     </script>
 
   </body>
