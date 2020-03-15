@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Basic JavaScript Dump</title>
+  <!-- Here we create a bit of CSS for class called .fancy-->
   <style>
       .fancy {
-          font-size: 100px;
+          font-size: 110px;
           color: green;
       }
   </style>
@@ -27,9 +28,12 @@
  newDiv = document.createElement("div");
 
    // We then give this newDiv the text "A pleasure to meet you!".
-newDiv.textContent = "A pleaure to meet you!"
+newDiv.textContent = "A pleaure to meet you!!!"
    // Now we us the ".appendChid" method to combine the two divs together on the page.
 targetDiv.appendChild(newDiv);
+
+// we then apply that css to newDiv by appling ".setAttribute" method to newDiv
+newDiv.setAttribute("class", "fancy");
     </script>
 
   </body>
