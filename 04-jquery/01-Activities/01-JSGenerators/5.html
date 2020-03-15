@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic JavaScript Dump</title>
+  <style>
+      .fancy {
+          font-size: 100px;
+          color: green;
+      }
+  </style>
+</head>
+  <body>
+
+    <!-- We created an empty HTML div. Note that there is no content inside. -->
+    <div id="empty-div"></div>
+
+    <!--We now create a new javaScript script. -->
+    <script>
+    // Inside, we latch onto the "emtyDiv" using the javascript ".getElementById" selector.
+    var targetDiv = document.getElementById('empty-div');
+
+    //We then use the javaScript method ".textContent" to change the content to "Hello Friends!"
+    targetDiv.textContent = "Hello Friends!";
+
+   // In this example, we instead create a new div called "newDiv"
+ newDiv = document.createElement("div");
+
+   // We then give this newDiv the text "A pleasure to meet you!".
+newDiv.textContent = "A pleaure to meet you!"
+   // Now we us the ".appendChid" method to combine the two divs together on the page.
+targetDiv.appendChild(newDiv);
+    </script>
+
+  </body>
+</html>
