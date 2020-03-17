@@ -27,8 +27,11 @@
 
     // display content of the array in div  with id = drin-options
     var drinkDiv = document.getElementById("drink-options");
-    drinkDiv.textContent = drinkList[0];
+    var newDrinkDiv = document.createElement("p");
+    newDrinkDiv.textContent = drinkList[0];
+    drinkDiv.appendChild(newDrinkDiv);
     
+
   
   </script>
 
