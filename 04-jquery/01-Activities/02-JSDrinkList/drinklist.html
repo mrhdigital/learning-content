@@ -48,7 +48,11 @@
     // For each interation, we perform a series of code operations each time.
     for (i = 0; i < drinkList.length; i++) {
 
+        // For each drink in the array, we create a new paragraph to hold that text.
+        // A new paragraph will be created for each iteration of the loop.
         newDrinkDiv = document.createElement("p");
+
+        // We then assign the text of this paragraph to be the text in the array/
         newDrinkDiv.textContent = drinkList[i];
         drinkDiv.appendChild(newDrinkDiv);
     }
