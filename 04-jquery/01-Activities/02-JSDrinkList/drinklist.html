@@ -46,6 +46,12 @@
 
     // We then use a for loop to iterate through all the drink in drinkList;
     // For each interation, we perform a series of code operations each time.
+    for (i = 0; i < drinkList.length; i++) {
+
+        newDrinkDiv = document.createElement("p");
+        newDrinkDiv.textContent = drinkList[i];
+        drinkDiv.appendChild(newDrinkDiv);
+    }
     
 
   
