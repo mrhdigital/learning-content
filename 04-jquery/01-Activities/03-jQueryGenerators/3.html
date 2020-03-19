@@ -14,6 +14,15 @@
     <!-- Created an empty HTML div. Note that there is no content -->
     <div id="empty-div"></div>
 
+      <!-- Here we're adding a bit of CSS -->
+  <style>
+    .fancy {
+      font-size: 100px;
+      color: green;
+    }
+  </style>
+
+
     <script>
 
         // Thanks to jQuery's handy $ selector ... we have a wealth of new methods for selecting and manipulating HTML.
@@ -22,13 +31,16 @@
         $("#empty-div").html("<h1>Hello Friends!</h1>");
 
 
-        // if we need each line to be its own div, we could just as easily create a new div.
+        // jQuery alternative to: var newDiv = document.createElement("div");
         var newDiv = $("<div>");
+    
+    // jQuery alternative to: newDiv.textContent = "A pleasure to meet you!";
         newDiv.text("A Pleasure to meet you!");
 
-        // We can then append it to the other div using the same ".append" method.
+    // jQuery alternative to: document.querySelector("#empty-div").appendChild(newDiv);
 
         $("#empty-div").append(newDiv);
+
 
     </script>
 
