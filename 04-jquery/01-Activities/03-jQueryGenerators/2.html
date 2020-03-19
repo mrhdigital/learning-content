@@ -20,9 +20,20 @@
 
         // Here we are using jQuery's .HTML method to instantly select and change the contents of our empty-div.
         $("#empty-div").html("<h1>Hello Friends!</h1>");
+
+        // The above code replaces the code below if the same is done using javaScript
+
+        // var targetDiv = document.getElementById("empty-div");
+        //   targetDiv.textContent = "Hello friends!";
+
         // if we need each line to be its own div, we could just as easily create a new div.
         var newDiv = $("<div>");
         newDiv.text("A Pleasure to meet you!");
+
+                // The above code replaces the code below if the same is done using javaScript
+                // var newDiv = document.createElement("div");
+                // newDiv.textContent = "A pleasure to meet you!";
+
 
         // We can then append it to the other div using the same ".append" method.
 
