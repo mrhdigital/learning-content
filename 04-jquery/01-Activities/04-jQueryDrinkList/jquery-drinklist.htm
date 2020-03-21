@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>JavaScript Content!</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -25,6 +28,11 @@
       "Ice Tea: $4"
     ];
 
+    for (i = 0; i < drinkList.length; i++) {
+
+        $("#drink-options").append(drinkList[i]);
+
+    }
     // Using JavaScript programmatically append each drinkList item to the "drink-options" div
     // HINT: you will need a for loop to go over each element in the list
 
