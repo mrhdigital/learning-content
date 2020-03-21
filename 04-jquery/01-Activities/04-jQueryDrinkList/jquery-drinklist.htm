@@ -11,11 +11,11 @@
 
   <h1>Drink Selection!</h1>
   <hr>
-
+  <!-- Here we create a generic drink-options div -->  
   <div id="drink-options"></div>
 
   <script type="text/javascript">
-
+ // Array hold all of the drinks availabe.
     var drinkList = [
       "Coffee: $5",
       "Espresso: $7",
@@ -28,6 +28,7 @@
       "Ice Tea: $4"
     ];
 
+// For loop then loops through our total drink list...
     for (i = 0; i < drinkList.length; i++) {
         var newDiv = $("<div>");
         newDiv.text(drinkList[i]);
