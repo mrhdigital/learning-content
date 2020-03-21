@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Content!</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <h1>Drink Selection!</h1>
+  <hr>
+  <!-- Here we create a generic drink-options div -->  
+  <div id="drink-options"></div>
+  
+  <style>
+    .fancy {
+      font-size: 30px;
+      color: green;
+    }
+  </style>
+  <script type="text/javascript">
+ // Array hold all of the drinks availabe.
+    var drinkList = [
+      "Coffee: $5",
+      "Espresso: $7",
+      "Cappuccino: $6",
+      "Latte: $4",
+      "Tea: $3",
+      "Ice Coffee: $6",
+      "Ice Espresso: $8",
+      "Ice Latte: $6",
+      "Ice Tea: $4"
+    ];
+   // This line of jQuery selects the div with the matching id (#drink-options)
+   var drinkDiv = $("#drink-options");
+// // For loop then loops through our total drink list...
+//     for (i = 0; i < drinkList.length; i++) {
+//         // It ehen creates a new div for each drink.
+//         var newDiv = $("<div>" + drinkList[i] + "</div>");
+//        // var newDiv = $("<div>");
+//        // newDiv.text(drinkList[i]);
+//        newDiv.attr("class", "fancy");
+//         drinkDiv.append(newDiv);
+        
+
+
+//     }
+
+// Here we loop through our array using the forEach method and append a new div with each iteration
+drinkList.forEach(function(drink1) {
+    drinkDiv.append("<div>" + drink1 + "</div>" );
+});
+drinkDiv.attr("class", "fancy");
+
+    // Using JavaScript programmatically append each drinkList item to the "drink-options" div
+    // HINT: you will need a for loop to go over each element in the list
+
+
+  </script>
+
+</body>
+</html>
