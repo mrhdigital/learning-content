@@ -18,7 +18,14 @@
     // This "document.ready" code isn't necessady in this example.. but it is useful to become familiar with.
     //"document.ready" makes sure that our JavaScript does not get run until the HTML document is finished laoding
     $(document).ready(function() {
+
+        // This code append the "Hello World!" text to element with id = "click-me" 
         $("#click-me").append("<p>" + "Hello World!" + "</P>");
+
+        // Here we use jQuery to select the header with "click-me" as its ID.
+        // Notice I have the click, #click-me, and then the function
+        // So action, id|class|element, fucntion
+        // And so whenever it is clicked...
         $("body").on("click", "#click-me", function(){
             alert("I've been clicked!!");
         });
