@@ -18,7 +18,10 @@
     // This "document.ready" code isn't necessady in this example.. but it is useful to become familiar with.
     //"document.ready" makes sure that our JavaScript does not get run until the HTML document is finished laoding
     $(document).ready(function() {
-        $("#click-me").text("Hello World!");
+        $("#click-me").append("<p>" + "Hello World!" + "</P>");
+        $("body").on("click", "#click-me", function(){
+            alert("I've been clicked!!");
+        });
         
     });
 
