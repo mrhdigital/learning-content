@@ -13,7 +13,13 @@
   <hr>
   <!-- Here we create a generic drink-options div -->  
   <div id="drink-options"></div>
-
+  
+  <style>
+    .fancy {
+      font-size: 30px;
+      color: green;
+    }
+  </style>
   <script type="text/javascript">
  // Array hold all of the drinks availabe.
     var drinkList = [
@@ -27,12 +33,18 @@
       "Ice Latte: $6",
       "Ice Tea: $4"
     ];
-
+   // This line of jQuery selects the div with the matching id (#drink-options)
+   var drinkDiv = $("#drink-options");
 // For loop then loops through our total drink list...
     for (i = 0; i < drinkList.length; i++) {
-        var newDiv = $("<div>");
-        newDiv.text(drinkList[i]);
-        $("#drink-options").append(newDiv);
+        // It ehen creates a new div for each drink.
+        var newDiv = $("<div>" + drinkList[i] + "</div>");
+       // var newDiv = $("<div>");
+       // newDiv.text(drinkList[i]);
+       newDiv.attr("class", "fancy");
+        drinkDiv.append(newDiv);
+        
+
 
     }
     // Using JavaScript programmatically append each drinkList item to the "drink-options" div
