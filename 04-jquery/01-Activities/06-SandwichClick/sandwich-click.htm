@@ -31,8 +31,8 @@
       // Here we create variables for tracking the number of sandwiches eaten
       // ...
  var pbjCounter = 0;
- var grilledcheeseCounter;
- var roastbeefCounter;
+ var grilledcheeseCounter = 0;
+ var roastbeefCounter = 0;
 
       // ...
 
@@ -54,7 +54,10 @@
 
         })
         .on("click", "#roastbeef", function(){
-            alert("No qualms about animal rights here. I'm all about that roast beef.");
+             alert("No qualms about animal rights here. I'm all about that roast beef.");
+             roastbeefCounter++;
+             alert("You've eaten " + roastbeefCounter + " roast beef sandwiches");
+
         });
 
       // ...
