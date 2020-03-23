@@ -18,6 +18,8 @@
   <h3 id="grilledcheese">Grilled Cheese</h3>
   <h3 id="roastbeef">Roast Beef</h3>
 
+  <div id = "image-div"></div>
+
   <script type="text/javascript">
 
     // This document.ready isn't necessary in this example... but is needed in cases where the HTML is complex.
@@ -51,6 +53,8 @@
             alert("Nom nom nom. Gooey Gooey Grilled Cheese!");
             grilledcheeseCounter++;
             alert("You've eaten " + grilledcheeseCounter + " grilled cheese sandwiches");
+
+            $("#image-div").html("<img src = 'https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/2/24/0/ZB0202H_classic-american-grilled-cheese_s4x3.jpg.rend.hgtvcom.826.620.suffix/1371603614279.jpeg' />");
 
         })
         .on("click", "#roastbeef", function(){
