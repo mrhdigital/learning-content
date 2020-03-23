@@ -30,7 +30,7 @@
       // ====================================================================
       // Here we create variables for tracking the number of sandwiches eaten
       // ...
- var pbjCounter;
+ var pbjCounter = 0;
  var grilledcheeseCounter;
  var roastbeefCounter;
 
@@ -43,6 +43,8 @@
       // ...
       $("body").on("click", "#pbj", function(){
             alert("Mmm... Peanut Butter Jelly Time.");
+            pbjCounter++;
+            alert("You've eaten " + pbjCounter + " PB&J sandwiches");
         })
         
         .on("click", "#grilledcheese", function(){
