@@ -77,7 +77,7 @@
         $("#computer-pick").text(computerGuess);
 
         // Compare the computer and user guess
-        if (computerGuess === yourPick) {
+        if (computerGuess === parseInt(yourPick)) {
             $("#result").text("Congratulations!! You guessed Correctly.")
         }
         else (
