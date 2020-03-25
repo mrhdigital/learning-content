@@ -112,40 +112,12 @@
     });
 
     // Size Buttons
-    $("#sizeControls").on("click", ".normal-button", function() {
-      captainPlanet.animate({ height: "300px" });
-    }).on("click", ".grow-button", function() {
-      captainPlanet.animate({ height: "500px" });
-    }).on("click", ".shrink-button", function() {
-      captainPlanet.animate({ height: "100px" });
-    });
+   
 
     // Visibility Buttons
-    $("#visibilityControls").on("click", ".vis-button", function() {
-      captainPlanet.animate({ opacity: "1" });
-    }).on("click", ".invis-button", function() {
-      captainPlanet.animate({ opacity: "0.05" });
-    });
-    $(".vis-button").on("click", function() {
-      captainPlanet.animate({ opacity: "1" });
-    });
-
-    $(".invis-button").on("click", function() {
-      captainPlanet.animate({ opacity: "0.05" });
-    });
-
+   
     // Move Buttons
-    $("#moveControls").on("click", ".up-button", function() {
-      captainPlanet.animate({ top: "-=200px" }, "normal");
-    }).on("click", ".down-button", function() {
-      captainPlanet.animate({ top: "+=200px" }, "normal");
-    }).on("click", ".left-button", function() {
-      captainPlanet.animate({ left: "-=200px" }, "normal");
-    }).on("click", ".right-button", function() {
-      captainPlanet.animate({ left: "+=200px" }, "normal");
-    }).on("click", ".back-button", function() {
-      captainPlanet.animate({ top: "50px", left: "80px" }, "fast");
-    });
+   
 
     // Keyboard move controls
     $(document).keyup(function(e) {
