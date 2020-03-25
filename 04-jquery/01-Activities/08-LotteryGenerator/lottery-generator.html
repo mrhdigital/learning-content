@@ -43,7 +43,7 @@ function randomNumber() {
       // ...
       $("body").on("click", "#random-button", function(){
         //   alert("Clicked");
-         $("#random-number").html("Random Number between 1 and 1000: " + randomNumber());
+         $("#random-number").prepend("<br><hr>" + randomNumber());
            
         });
 
