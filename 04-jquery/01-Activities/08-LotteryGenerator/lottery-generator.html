@@ -16,7 +16,7 @@
 
   <div class="jumbotron">
 
-    <h1 class="text-center">Generate a Random Number!</h1>
+    <h1 class="text-center">Generate Lottery Numbers!</h1>
 
     <div class="text-center">
 
@@ -32,8 +32,9 @@
 
   <script type="text/javascript">
 
-function randomNumber(min, max) {  
-    return Math.floor(Math.random() * (max - min) + min); 
+function randomNumber() {  
+    return Math.floor(100000000 + Math.random() * 900000000);
+    
 }  
 
     $(document).ready(function() {
@@ -42,7 +43,7 @@ function randomNumber(min, max) {
       // ...
       $("body").on("click", "#random-button", function(){
         //   alert("Clicked");
-         $("#random-number").html("Random Number between 1 and 1000: " + randomNumber(1, 1000));
+         $("#random-number").html("Random Number between 1 and 1000: " + randomNumber());
            
         });
 
