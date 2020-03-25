@@ -77,6 +77,13 @@
         $("#computer-pick").text(computerGuess);
 
         // Compare the computer and user guess
+        if (computerGuess === yourPick) {
+            $("#result").text("Congratulations!! You guessed Correctly.")
+        }
+        else (
+
+            $("#result").text("You guessed Incorrectly!.")
+        )
         // Inform the user if the've guessed correctly or incorrectly
 
       });
