@@ -135,6 +135,8 @@
     captainPlanet.animate({top: "+=100px"});
   }).on("click", ".right-button",function(){
     captainPlanet.animate({left: "+=100px"});
+  }).on("click", ".back-button", function() {
+    captainPlanet.animate({ top: "50px", left: "80px" }, "fast");
   });
 
     // Keyboard move controls
