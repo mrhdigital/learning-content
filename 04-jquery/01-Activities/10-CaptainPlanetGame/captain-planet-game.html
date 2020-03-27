@@ -112,8 +112,12 @@
     });
 
     // Size Buttons
-   $("#sizeControls").on("click", ".grow-button",function(){
+   $("#sizeControls").on("click", ".normal-button",function(){
+    captainPlanet.animate({height: "300px"});
+  }).on("click", ".grow-button",function(){
     captainPlanet.animate({height: "500px"});
+  }).on("click", ".shrink-button",function(){
+    captainPlanet.animate({height: "100px"});
   });
 
     // Visibility Buttons
