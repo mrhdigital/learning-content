@@ -121,9 +121,21 @@
   });
 
     // Visibility Buttons
-   
+    $("#visibilityControls").on("click", ".vis-button",function(){
+    captainPlanet.animate({opacity: "1.0"});
+  }).on("click", ".invis-button",function(){
+    captainPlanet.animate({opacity: "0.1"});
+  });
     // Move Buttons
-   
+    $("#moveControls").on("click", ".up-button",function(){
+    captainPlanet.animate({top: "-=100px"});
+  }).on("click", ".left-button",function(){
+    captainPlanet.animate({left: "-=100px"});
+  }).on("click", ".down-button",function(){
+    captainPlanet.animate({top: "+=100px"});
+  }).on("click", ".right-button",function(){
+    captainPlanet.animate({left: "+=100px"});
+  });
 
     // Keyboard move controls
     $(document).keyup(function(e) {
