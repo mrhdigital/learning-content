@@ -154,7 +154,15 @@
         break;
 
         // Move Buttons (Keyboard Up)
-     
+      case 38:
+        captainPlanet.animate({ top: "-=200px" }, "normal");
+        break;
+
+        // Move Buttons (Keyboard Left)
+      case 37:
+        captainPlanet.animate({ left: "-=200px" }, "normal");
+        break;
+
       default:
         break;
       }
