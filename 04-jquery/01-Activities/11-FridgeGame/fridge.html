@@ -14,9 +14,10 @@
 
   .letter {
     width: 30px;
-    height: 30px;
+    line-height: 30px;
     border-style: solid;
-    padding: 2px;
+    padding: 2px,0;
+    text-align: center;
     float: left;
     margin: 2px;
   }
@@ -27,6 +28,10 @@
 
   .fridge-color {
     color: orange;
+  
+    
+    
+    
   }
 
   #display {
@@ -82,7 +87,8 @@
         //console.log(letterBtn);
 
         // 4. Then give each "letterBtn" an attribute called "data-letter", with a value eqaual to "letters[i]"
-        letterBtn.attr("data-letter", letters[i]);
+        // this will be used in "on-click" event to letter buttons for Major Task #2.
+       letterBtn.attr("data-letter", letters[i]);
         // console.log(letterBtn);
 
         // 5. Then give each "letterBtn" a text equal to "letters[i]".
@@ -112,18 +118,22 @@
               // Inside the on-click event...
 
       // 8. Create a variable called "fridgeMagnet" and set the variable equal to a new div.
+      var fridgeMagnet = $("<div>");
 
-      })
+    
 
-      // Inside the on-click event...
-
-      // 8. Create a variable called "fridgeMagnet" and set the variable equal to a new div.
-
+    
       // 9. Give each "fridgeMagnet" the following classes: "letter fridge-color".
+      fridgeMagnet.addClass("letter fridge-color");
 
       // 10. Then chain the following code onto the "fridgeMagnet" variable: .text($(this).attr("data-letter"))
+      //fridgeMagnet.text($(this).attr("data-letter"));
+      fridgeMagnet.text($(this).attr("data-letter"));
 
       // 11. Lastly append the fridgeMagnet variable to the "#display" div (provided);
+      $("#display").append(fridgeMagnet);
+
+    });
 
       // Be sure to test that your code works for this major task, before proceeding to the next one!
 
