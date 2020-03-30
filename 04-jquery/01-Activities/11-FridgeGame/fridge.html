@@ -103,10 +103,6 @@
       }
 
 
-
-
-
-
       // Be sure to test that your code works for this major task, before proceeding to the next one!
 
       // MAJOR TASK #2: ATTACH ON-CLICK EVENTS TO "LETTER" BUTTONS
@@ -141,10 +137,14 @@
       // =================================================================================
 
       // 12. Create an "on-click" event attached to the "#clear" button id.
+      main.on("click", "#clear", function() {
 
+    
       // Inside the on-click event...
 
       // 13. Use the jQuery "empty()" method to clear the contents of the "#display" div.
+      main.find("#display").empty();
+    });
 
     });
   </script>
