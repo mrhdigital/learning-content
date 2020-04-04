@@ -102,7 +102,9 @@
 
 
         // Shuffle text color array
-
+        colorsOfText.sort(function() {
+          return 0.5 - Math.random();
+        });
 
         // Loop through all colors in the array
         // Create element to hold word
