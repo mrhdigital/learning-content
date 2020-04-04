@@ -80,7 +80,9 @@
 
         // Set random word color
 
-
+        targetColorOfText = colors[Math.floor(Math.random() * colors.length)];
+        $("#rand-target-color").css("color", targetColorOfText);
+      }
       }
 
       // This function creates the actual "game" logic.
