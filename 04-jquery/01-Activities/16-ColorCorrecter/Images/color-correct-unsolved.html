@@ -75,7 +75,8 @@
       function randColor() {
 
         // Set random word
-
+        targetColor = colors[Math.floor(Math.random() * colors.length)];
+        $("#rand-target-color").text(targetColor);
 
         // Set random word color
 
