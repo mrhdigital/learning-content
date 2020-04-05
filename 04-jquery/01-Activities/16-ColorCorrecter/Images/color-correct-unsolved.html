@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Correct Color Picker</title>
 
   <!-- Bootstrap File -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery.js"></script>
@@ -18,6 +20,7 @@
   </style>
 
 </head>
+
 <body>
 
   <div class="container">
@@ -47,7 +50,7 @@
   <script>
 
     // JavaScript function that wraps everything
-    $(document).ready(function() {
+    $(document).ready(function () {
 
       // Array for word colors
       var colorsOfText = [];
@@ -83,13 +86,13 @@
         targetColorOfText = colors[Math.floor(Math.random() * colors.length)];
         $("#rand-target-color").css("color", targetColorOfText);
       }
-      
+
 
       // This function creates the actual "game" logic.
       function createColorPicker() {
 
         // Shuffle color array
-        colors.sort(function() {
+        colors.sort(function () {
           return 0.5 - Math.random();
         });
 
@@ -102,23 +105,23 @@
 
 
         // Shuffle text color array
-        colorsOfText.sort(function() {
+        colorsOfText.sort(function () {
           return 0.5 - Math.random();
         });
 
         // Loop through all colors in the array
         for (var i = 0; i < colors.length; i++) {
 
-// Create element to hold word
-var holder = document.createElement("li");
-$("#color-picker").append(holder);
+          // Create element to hold word
+          var holder = document.createElement("li");
+          $("#color-picker").append(holder);
 
-// Output a word
-$(holder).attr("id", colors[i]).text(colors[i]);
+          // Output a word
+          $(holder).attr("id", colors[i]).text(colors[i]);
 
-// Make word a random color
-$(holder).css("color", colorsOfText[i]);
-}
+          // Make word a random color
+          $(holder).css("color", colorsOfText[i]);
+        }
 
       }
 
@@ -141,7 +144,7 @@ $(holder).css("color", colorsOfText[i]);
       }
 
       // Get id of element clicked by user
-      $("#color-picker").click(function(event) {
+      $("#color-picker").click(function (event) {
         userAnswer = event.target.id;
 
         // Compare id to target id
@@ -157,9 +160,10 @@ $(holder).css("color", colorsOfText[i]);
 
       // Run game
       reset();
-      
+
     });
 
   </script>
 </body>
+
 </html>
