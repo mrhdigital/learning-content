@@ -57,6 +57,32 @@ console.log("I found my " + theCobWeb.biggestWeb.biggerWeb.smallerWeb.tinyWeb.it
 //    toenails it should give back tinyWeb
 //    headphones it should give back otherBigWeb
 // HINT: you should use recursion
+function isObject(o) {
+    return typeof o == "object";
+  }
+
+  function findInObj(obj, itemName, webName) {
+    for (key in obj) {
+      if (key == "item") {
+        if (obj[key] == itemName) {
+          console.log(webName); 
+        }
+      }else if(key == "items") {
+        if (obj[key].indexOf(itemName) > -1) {
+          console.log(webName);
+        }
+      }else{
+        if (isObject(obj[key])) {
+          findInObj(obj[key], itemName, key); // recursion
+        }
+      }
+    }
+  }
+  
+  // tests
+
+  // should console log biggestWeb
+  findInObj(theCobWeb, "comb", "theCobWeb");
 
 </script>
 
