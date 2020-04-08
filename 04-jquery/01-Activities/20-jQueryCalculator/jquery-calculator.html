@@ -135,6 +135,9 @@ $(".equal").on("click", function() {
     if(operator === "divide") {
         result = firstNumber / secondNumber;
     }
+    if(operator === "power") {
+        result = Math.pow(firstNumber, secondNumber);
+    }
     $("#result").html(result);
 });
 
