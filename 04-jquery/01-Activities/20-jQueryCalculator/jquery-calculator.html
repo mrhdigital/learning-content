@@ -98,6 +98,12 @@ function initializeCalculator() {
 
 // Add an on click listner to all elements that have the class "number"
 $(".number").on("click", function() {
+
+    // Check if we've already run a calculation, if so.. we'll set isCalculated to false
+    if(isCalculated) {
+        return false;
+    }
+
 //console.log(this.value);
 // If operator is chosen, we should be writing the secondNumber, otherwise, the firstNubmer
 if(isOperatorChosen) {
@@ -117,6 +123,14 @@ else {
 // All a on click listener to all elements that have the class "operator"
 $(".operator").on("click", function() {
 
+    
+
+    //Check if a first number has already been selected
+    // Or we've already run a calculation, if so we just exit.
+    if(!firstNumber || isCalculated) {
+        return false;
+    }
+
     // Set isOpertorChosen to true so we start writing to secondNumber
     isOperatorChosen = true;
 
@@ -129,6 +143,14 @@ $(".operator").on("click", function() {
 //Add an on click listener to all elements that have the class "equal"
 $(".equal").on("click", function() {
 
+    // Check if we've already click equal, if so.. don't do the calculation again.
+    if(isCalculated) {
+        return false;
+    }
+
+    // Set isCalculated to true so that we don't get in a weirds UI state by clicking buttons again
+    isCalculated = true;
+
     // Use parseInt to convert our string representation of numbers into actual integers
     firstNumber = parseInt(firstNumber);
     secondNumber = parseInt(secondNumber);
@@ -139,7 +161,7 @@ $(".equal").on("click", function() {
         result = firstNumber + secondNumber;
     }
     if(operator === "minus") {
-        result = firstNumber = secondNumber;
+        result = firstNumber - secondNumber;
     }
     if(operator === "times") {
         result = firstNumber * secondNumber;
