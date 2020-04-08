@@ -82,10 +82,19 @@ var firstNumber = "";
 var secondNumber = "";
 var operator;
 var result;
+var isOperatorChosen;
 
 // Add an on click listner to all elements that have the class "number"
 $(".number").on("click", function() {
 //console.log(this.value);
+// If operator is chosen, we should be writing the secondNumber, otherwise, the firstNubmer
+if(isOperatorChosen) {
+    secondNumber += this.value;
+    
+}
+else {
+    firstNumber += this.value;
+}
 firstNumber += this.value;
 console.log(firstNumber);
 });
