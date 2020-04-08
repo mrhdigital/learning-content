@@ -90,13 +90,16 @@ $(".number").on("click", function() {
 // If operator is chosen, we should be writing the secondNumber, otherwise, the firstNubmer
 if(isOperatorChosen) {
     secondNumber += this.value;
-    
+    $("#second-number").html(secondNumber);
+    console.log(secondNumber);
 }
 else {
     firstNumber += this.value;
+    $("#first-number").html(firstNumber);
+    console.log(firstNumber);
 }
-firstNumber += this.value;
-console.log(firstNumber);
+// firstNumber += this.value;
+// console.log(firstNumber);
 });
 
 
