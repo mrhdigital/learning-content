@@ -117,6 +117,19 @@ $(".operator").on("click", function() {
 //Add an on click listener to all elements that have the class "equal"
 $(".equal").on("click", function() {
 
+    // Use parseInt to convert our string representation of numbers into actual integers
+    firstNumber = parseInt(firstNumber);
+    secondNumber = parseInt(secondNumber);
+
+    // Based on the operator that was chosen.
+    // Then run the operation and set HTML of the result of that operation
+    if(operator === "plus") {
+        result = firstNumber + secondNumber;
+    }
+    if(operator === "minus") {
+        result = firstNumber = secondNumber;
+    }
+    $("#result").html(result);
 });
 
 
