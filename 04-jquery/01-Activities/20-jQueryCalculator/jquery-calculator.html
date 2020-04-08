@@ -107,7 +107,13 @@ $(".operator").on("click", function() {
 
     // Set isOpertorChosen to true so we start writing to secondNumber
     isOperatorChosen = true;
-})
+
+    // Store off the operator
+    operator = this.value;
+
+    //Set the HTML of the #operator to the text of what was clicked
+    $("#operator").html($(this).text());
+});
 
 
 });
