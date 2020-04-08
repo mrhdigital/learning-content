@@ -84,6 +84,18 @@ var operator;
 var result;
 var isOperatorChosen;
 
+// Use a function to initialize our calculator.
+// This way when the user hits clear, we can guarantee a reset of the app.
+function initializeCalculator() {
+    firstNumber = "";
+    secondNumber = "";
+    operator = "";
+    isOperatorChosen = false;
+    isCalculated = false;
+
+    $("#first-number, #second-number, #operator, #result").empty();
+}
+
 // Add an on click listner to all elements that have the class "number"
 $(".number").on("click", function() {
 //console.log(this.value);
@@ -141,7 +153,14 @@ $(".equal").on("click", function() {
     $("#result").html(result);
 });
 
+// Add an on click listener to all the elements that have the class "clear"
+$(".clear").on("click", function(){
+    //Call teh initializeCalculator so we can reset the state of our app
+    initializeCalculator();
+})
 
+// Call initializeCalculator so we can set the state of our app
+initializeCalculator();
 });
 
 </script>
