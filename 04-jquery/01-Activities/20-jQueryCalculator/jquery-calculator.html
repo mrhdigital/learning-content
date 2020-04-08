@@ -78,14 +78,16 @@ $(document).ready(function() {
 
 // Your code here...
 // Make our varibales golbal to the runtime of our appication
-var firstNumber;
-var secondNumber;
+var firstNumber = "";
+var secondNumber = "";
 var operator;
 var result;
 
 // Add an on click listner to all elements that have the class "number"
 $(".number").on("click", function() {
-console.log(this.value);
+//console.log(this.value);
+firstNumber += this.value;
+console.log(firstNumber);
 });
 
 
