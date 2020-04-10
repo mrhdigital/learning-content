@@ -36,7 +36,9 @@ for (var i = 0; i < 5; i++){
 
 // Create a for loop that loops through your five string array
 
-
+for (i = 0; i < fiveArray.length; i++) {
+    console.log("My name is " +fiveArray[i]);
+}
 
 
 // 4. FUNCTIONS
