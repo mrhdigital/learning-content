@@ -58,6 +58,14 @@ division (10, 5);
 // Create a function that takes in an array of numbers and then loops through the array and prints out numbers.
 // Then call that function
 
+function arrayNumberPrint (arrayNumber) {
+    for(i = 0; i < arrayNumber.length; i++) {
+        console.log("Number: " + arrayNumber[i]);
+    }
+}
+
+var arrayNumber = [11, 21, 31, 41, 51];
+arrayNumberPrint(arrayNumber);
 
 
 
