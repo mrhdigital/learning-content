@@ -28,6 +28,9 @@ var fiveNum = [11, 21, 31, 41, 51, 61];
 // ==========================================================
 
 // Create a for loop that loops through and prints "My name is Bob five times"
+for (var i = 0; i < 5; i++){
+    console.log("My name is Bob");
+}
 
 
 
