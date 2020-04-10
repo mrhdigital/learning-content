@@ -46,7 +46,12 @@ for (i = 0; i < fiveArray.length; i++) {
 
 // Create a function that takes two numbers and divides the first number by the second.
 // Then call that function
+function division (num1,num2) {
+    result = num1 / num2;
+    console.log(result);
 
+}
+division (10, 5);
 
 
 
