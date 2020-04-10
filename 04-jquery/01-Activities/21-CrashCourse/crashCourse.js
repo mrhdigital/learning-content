@@ -46,7 +46,7 @@ for (i = 0; i < fiveArray.length; i++) {
 
 // Create a function that takes two numbers and divides the first number by the second.
 // Then call that function
-function division (num1,num2) {
+var division = function(num1,num2) {
     result = num1 / num2;
     console.log(result);
 
@@ -58,9 +58,9 @@ division (10, 5);
 // Create a function that takes in an array of numbers and then loops through the array and prints out numbers.
 // Then call that function
 
-function arrayNumberPrint (arrayNumber) {
-    for(i = 0; i < arrayNumber.length; i++) {
-        console.log("Number: " + arrayNumber[i]);
+var  arrayNumberPrint = function (NumberArray) {
+    for(i = 0; i < NumberArray.length; i++) {
+        console.log("Number: " + NumberArray[i]);
     }
 }
 
@@ -74,7 +74,13 @@ arrayNumberPrint(arrayNumber);
 
 // Create a JavaScript Object
 
+var employees = {
+    name: "Julie",
+    id: 101,
+    title: "data scienctist"
 
+
+};
 
 
 // Console log any three of the properties in that object
