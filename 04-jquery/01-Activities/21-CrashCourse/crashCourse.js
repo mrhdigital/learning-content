@@ -77,7 +77,7 @@ arrayNumberPrint(arrayNumber);
 var employees = {
     name: "Julie",
     id: 101,
-    title: "data scienctist"
+    title: "data scientist"
 
 
 };
@@ -85,7 +85,9 @@ var employees = {
 
 // Console log any three of the properties in that object
 
-
+console.log(employees.name);
+console.log(employees.id);
+console.log(employees.title);
 
 // Create an Array of 5 Objects
 
