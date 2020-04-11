@@ -125,7 +125,12 @@ var employeesDb = [
 
 // Console log 3 properties for every one of the five objects
 
+for(i = 0; i < employeesDb.length; i++) {
+    console.log(employeesDb[i].name);
+    console.log(employeesDb[i].id);
+    console.log(employeesDb[i].title);
 
+}
 
 // 6. JQUERY EVENTS
 // ==========================================================
