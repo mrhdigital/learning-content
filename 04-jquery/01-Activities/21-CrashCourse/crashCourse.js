@@ -91,7 +91,37 @@ console.log(employees.title);
 
 // Create an Array of 5 Objects
 
+var employeesDb = [
+    {
+    name: "Julie",
+    id: 101,
+    title: "data scientist"
 
+    },
+    {
+    name: "Sam",
+    id: 102,
+    title: "scientist"
+},
+{
+    name: "Karem",
+    id: 103,
+    title: "Nurse"
+    
+},
+{
+    name: "Karie",
+    id: 104,
+    title: "Supervisor"
+    
+},
+{
+    name: "Olga",
+    id: 105,
+    title: "Investigator"
+
+    }
+]
 
 // Console log 3 properties for every one of the five objects
 
