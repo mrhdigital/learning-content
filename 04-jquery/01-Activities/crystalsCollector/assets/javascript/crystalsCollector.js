@@ -30,7 +30,7 @@ var crystal = [
   }
 ];
 
-var targetNumber = 0;
+var targetScore = 0;
 
 
 
@@ -42,8 +42,8 @@ var getRandom = function(min, max) {
 }   
 
 // Assign random number to varialbe targetNumber
-targetNumber = getRandom(19,120);
- console.log(targetNumber);
+targetScore = getRandom(19,120);
+ console.log(targetScore);
 
  // created for loop to assign the random values to each object(colored crytal) in the array
  for(var i = 0; i < crystal.length; i++) {
@@ -55,8 +55,16 @@ targetNumber = getRandom(19,120);
 }
 
 
+  // Testing Console
+  console.log("---------------------------------------");
+  console.log("Target Score:" + targetScore);
+  console.log("Blue: " + crystal[0].value + " | Green: " +crystal[1].value + " |Red: " + crystal[2].value+ " | Yellow: " + crystal[3].value);
+  console.log("---------------------------------------");
+
+
+
  // Display the targetNumber in the div with ID = random-area
- $("#random-area").html(targetNumber);
+ $("#random-area").html(targetScore);
 
 
 
