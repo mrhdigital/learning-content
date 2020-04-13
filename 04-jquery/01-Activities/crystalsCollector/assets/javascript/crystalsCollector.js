@@ -60,6 +60,20 @@ targetScore = getRandom(19,120);
   $("#crystal-area").append(crystalDiv);
 }
 
+    // Building our win/loss display and appending it to the page.
+    var wSpan = $("<span>").text(winCount);
+    var lSpan = $("<span>").text(lossCount);
+   
+
+    var pWins = $("<p>").text("Wins: ");
+    var pLosses = $("<p>").text("Losses: ");
+
+    pWins.append(wSpan);
+    pLosses.append(lSpan);
+
+    $("#win-area").append(pWins);
+    $("#win-area").append(pLosses);
+  
 
   // Testing Console
   console.log("---------------------------------------");
@@ -77,6 +91,16 @@ $(".crystals-button").click(function() {
 currentScore += parseInt(this.dataset.name);
 console.log(currentScore);
    $("#score-area").html(currentScore);
+
+   if(currentScore === targetScore) {
+    alert("Congratulations! You Won!");
+     winCount++;
+
+   }
+   else if (currentScore > targetScore) {
+     alert("Sorry, You Lost!");
+     lossCount++;
+   }
 
   //addValues(crystal[0]);
 });
