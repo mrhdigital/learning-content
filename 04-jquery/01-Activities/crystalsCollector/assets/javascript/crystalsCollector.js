@@ -51,6 +51,7 @@ var getRandom = function(min, max) {
 targetScore = getRandom(19,120);
  console.log(targetScore);
 
+ var startGame = function() {
  // created for loop to assign the random values to each object(colored crytal) in the array
  for(var i = 0; i < crystal.length; i++) {
   crystal[i].value = getRandom(1,12);
@@ -60,6 +61,13 @@ targetScore = getRandom(19,120);
   $("#crystal-area").append(crystalDiv);
 }
 
+  // Testing Console
+  console.log("---------------------------------------");
+  console.log("Target Score:" + targetScore);
+  console.log("Blue: " + crystal[0].value + " | Green: " +crystal[1].value + " |Red: " + crystal[2].value+ " | Yellow: " + crystal[3].value);
+  console.log("---------------------------------------");
+
+ }
     // Building our win/loss display and appending it to the page.
     var wSpan = $("<span>").text(winCount);
     var lSpan = $("<span>").text(lossCount);
@@ -75,11 +83,6 @@ targetScore = getRandom(19,120);
     $("#win-area").append(pLosses);
   
 
-  // Testing Console
-  console.log("---------------------------------------");
-  console.log("Target Score:" + targetScore);
-  console.log("Blue: " + crystal[0].value + " | Green: " +crystal[1].value + " |Red: " + crystal[2].value+ " | Yellow: " + crystal[3].value);
-  console.log("---------------------------------------");
 // Here we create an on.click event for the crystals.
 // $(".crystals-button").on("click",function(crystal) {
 //   //alert("clicked");
@@ -87,20 +90,39 @@ targetScore = getRandom(19,120);
 //   $("#score-area").html(currentScore);
 //   console.log(currentScore);
 //})
+
+
+startGame();
+
 $(".crystals-button").click(function() {
 currentScore += parseInt(this.dataset.name);
 console.log(currentScore);
    $("#score-area").html(currentScore);
 
    if(currentScore === targetScore) {
-    alert("Congratulations! You Won!");
      winCount++;
+     $("#score-area").html(currentScore);
+
+     alert("Congratulations! You Won!");
+     $("#score-area crystal-area").empty();
+     currentScore = 0;
+     startGame();
+
 
    }
    else if (currentScore > targetScore) {
-     alert("Sorry, You Lost!");
      lossCount++;
+     $("#score-area").html(currentScore);
+
+     alert("Sorry, You Lost!");
+     $("#score-area crystal-area").empty();
+     currentScore = 0;
+     startGame();
+
+
+
    }
+
 
   //addValues(crystal[0]);
 });
