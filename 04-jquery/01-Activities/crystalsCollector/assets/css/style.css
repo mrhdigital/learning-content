@@ -33,6 +33,7 @@ body {
   height: 100px;
   padding: 4px;
   font-size: 3vw;
+  text-align: center;
   color: purple;
   background-color: mediumseagreen;
 }
@@ -41,6 +42,8 @@ body {
   width: 210px;
   height: 100px;
   padding: 4px;
+  font-size: 3vw;
+  text-align: center;
   color: ghostwhite;
   background-color: darkcyan;
 }

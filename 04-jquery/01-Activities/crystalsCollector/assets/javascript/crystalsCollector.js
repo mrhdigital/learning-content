@@ -30,7 +30,13 @@ var crystal = [
   }
 ];
 
+// Score (current and target)
 var targetScore = 0;
+var currentScore = 0;
+
+// Wins and losses
+var winCount = 0;
+var lossCount = 0;
 
 
 
@@ -48,7 +54,7 @@ targetScore = getRandom(19,120);
  // created for loop to assign the random values to each object(colored crytal) in the array
  for(var i = 0; i < crystal.length; i++) {
   crystal[i].value = getRandom(1,12);
-  var crystalDiv = $("<div class='crystals-button' data-name='" + crystal[i].name + "'>");
+  var crystalDiv = $("<div class='crystals-button' data-name='" + crystal[i].value + "'>");
   var crystalImg = $("<img alt='image' class='crystal-img'>").attr("src", crystal[i].imageUrl);
   crystalDiv.append(crystalImg);
   $("#crystal-area").append(crystalDiv);
@@ -60,12 +66,25 @@ targetScore = getRandom(19,120);
   console.log("Target Score:" + targetScore);
   console.log("Blue: " + crystal[0].value + " | Green: " +crystal[1].value + " |Red: " + crystal[2].value+ " | Yellow: " + crystal[3].value);
   console.log("---------------------------------------");
+// Here we create an on.click event for the crystals.
+// $(".crystals-button").on("click",function(crystal) {
+//   //alert("clicked");
+//   currentScore += crystal.value;
+//   $("#score-area").html(currentScore);
+//   console.log(currentScore);
+//})
+$(".crystals-button").click(function() {
+currentScore += parseInt(this.dataset.name);
+console.log(currentScore);
+   $("#score-area").html(currentScore);
 
+  //addValues(crystal[0]);
+});
 
 
  // Display the targetNumber in the div with ID = random-area
  $("#random-area").html(targetScore);
-
+ 
 
 
 
