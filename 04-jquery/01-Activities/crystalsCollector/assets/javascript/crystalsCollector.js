@@ -33,6 +33,7 @@ var crystal = [
 // Score (current and target)
 var targetScore = 0;
 var currentScore = 0;
+var GameStarted = false;
 
 // Wins and losses
 var winCount = 0;
@@ -69,8 +70,9 @@ targetScore = getRandom(19,120);
 
  }
     // Building our win/loss display and appending it to the page.
-    var wSpan = $("<span>").text(winCount);
-    var lSpan = $("<span>").text(lossCount);
+    var updateDisplay = function() {
+    var wSpan = $("<span id = 'winId'>").text(winCount);
+    var lSpan = $("<span id = 'lossId'>").text(lossCount);
    
 
     var pWins = $("<p>").text("Wins: ");
@@ -82,7 +84,7 @@ targetScore = getRandom(19,120);
     $("#win-area").append(pWins);
     $("#win-area").append(pLosses);
   
-
+    }
 // Here we create an on.click event for the crystals.
 // $(".crystals-button").on("click",function(crystal) {
 //   //alert("clicked");
@@ -91,33 +93,53 @@ targetScore = getRandom(19,120);
 //   console.log(currentScore);
 //})
 
+if(!GameStarted){
+  startGame();
+  updateDisplay();
 
-startGame();
+}
 
 $(".crystals-button").click(function() {
+  alert("Hello");
 currentScore += parseInt(this.dataset.name);
 console.log(currentScore);
    $("#score-area").html(currentScore);
 
    if(currentScore === targetScore) {
      winCount++;
+     updateDisplay();
      $("#score-area").html(currentScore);
 
      alert("Congratulations! You Won!");
-     $("#score-area crystal-area").empty();
+     $("#score-area").empty();
+     $("#crystal-area").empty();
+     $("#win-area").empty();
+     $("#winId").html(winCount);
+
+
      currentScore = 0;
      startGame();
+     
+     GameStarted = true;
 
 
    }
    else if (currentScore > targetScore) {
      lossCount++;
+     updateDisplay();
+
      $("#score-area").html(currentScore);
 
      alert("Sorry, You Lost!");
-     $("#score-area crystal-area").empty();
+     $("#score-area").empty();
+     $("#crystal-area").empty();
+     $("#lossId").html(lossCount);
+
+
      currentScore = 0;
      startGame();
+     
+     GameStarted = true;
 
 
 
