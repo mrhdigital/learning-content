@@ -53,6 +53,8 @@ targetScore = getRandom(19,120);
  console.log(targetScore);
 
  var startGame = function() {
+  var GameStarted = true;
+
  // created for loop to assign the random values to each object(colored crytal) in the array
  for(var i = 0; i < crystal.length; i++) {
   crystal[i].value = getRandom(1,12);
@@ -100,14 +102,14 @@ if(!GameStarted){
 }
 
 $(".crystals-button").click(function() {
-  alert("Hello");
+  //alert("Hello");
 currentScore += parseInt(this.dataset.name);
-console.log(currentScore);
+console.log("currentScore");
    $("#score-area").html(currentScore);
 
    if(currentScore === targetScore) {
      winCount++;
-     updateDisplay();
+     //updateDisplay();
      $("#score-area").html(currentScore);
 
      alert("Congratulations! You Won!");
@@ -118,20 +120,20 @@ console.log(currentScore);
 
 
      currentScore = 0;
-     startGame();
+     //startGame();
      
-     GameStarted = true;
+     //GameStarted = true;
 
 
    }
    else if (currentScore > targetScore) {
      lossCount++;
-     updateDisplay();
+     //updateDisplay();
 
      $("#score-area").html(currentScore);
 
      alert("Sorry, You Lost!");
-     $("#score-area").empty();
+     //$("#score-area").empty();
      $("#crystal-area").empty();
      $("#lossId").html(lossCount);
 
@@ -139,7 +141,7 @@ console.log(currentScore);
      currentScore = 0;
      startGame();
      
-     GameStarted = true;
+    // GameStarted = true;
 
 
 
