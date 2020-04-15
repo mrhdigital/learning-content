@@ -39,7 +39,11 @@
 
       //  Increment wins by one.
       //  Find the div with an id of win-lose. Update it with an h2 of "Winner!"
-      //  Find the div with an id of wins. Update it with the value of the wins variable.
+         if (result === randomNumber) {
+             winn++;
+             $("#win-lose").html("<h2>Winner!</h2>");
+             $("#wins").html("<h3>" + winn + "</h3>");
+         }
 
       // Else:
 
