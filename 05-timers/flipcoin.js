@@ -24,6 +24,10 @@
       //  
 
       // Else:
+      else {
+        $("$coin-image").html("<img src = 'http://random-ize.com/coin-flip/us-quarter/us-quarter-back.jpg' />");
+  
+      }
 
       //  Find the div with an id of coin-image.
       //  Replace its html with an img tag containing this image:
