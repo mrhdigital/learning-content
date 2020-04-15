@@ -46,7 +46,13 @@
          }
 
       // Else:
+       else {
+           losses++;
+           $("#win-lose").html("<h2>Loser!</h2>");
+           $("#wins").html("<h3>" + losses + "</h3>");
 
+
+       }
       //  Increment losses by one.
       //  Find the div with an id of win-lose. Update it with an h2 of "Loser!"
       //  Find the div with an id of losses. Update it with the value of the losses variable.
