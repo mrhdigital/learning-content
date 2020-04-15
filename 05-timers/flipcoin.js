@@ -16,10 +16,12 @@
       //  STEP TWO:
 
       //  If randomNumber is equal to zero then:
-
+            if (randomNumber === 0) {
+                $("$coin-image").html("<img src = 'http://random-ize.com/coin-flip/us-quarter/us-quarter-front.jpg' />");
+            }
       //  Find the div with an id of coin-image.
       //  Replace its html with an img tag containing this image:
-      //  http://random-ize.com/coin-flip/us-quarter/us-quarter-front.jpg
+      //  
 
       // Else:
 
