@@ -51,6 +51,8 @@ var getRandom = function(min, max) {
 // Assign random number to varialbe targetNumber
 targetScore = getRandom(19,120);
  console.log(targetScore);
+ // Display the targetNumber in the div with ID = random-area
+ $("#random-area").html(targetScore);
 
  var startGame = function() {
   var GameStarted = true;
@@ -101,7 +103,8 @@ if(!GameStarted){
 
 }
 
-$(".crystals-button").click(function() {
+
+  $(".crystals-button").click(function() {
   //alert("Hello");
 currentScore += parseInt(this.dataset.name);
 console.log("currentScore");
@@ -146,14 +149,14 @@ console.log("currentScore");
 
 
    }
+  
 
 
   //addValues(crystal[0]);
 });
 
 
- // Display the targetNumber in the div with ID = random-area
- $("#random-area").html(targetScore);
+ 
  
 
 
