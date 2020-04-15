@@ -10,6 +10,8 @@
       //  STEP ONE:
 
       //  Declare and initialize a variable named randomNumber to either 0 or 1. Make it random.
+      var randomNumber = Math.floor(Math.random() * 2);
+
 
       //  STEP TWO:
 
