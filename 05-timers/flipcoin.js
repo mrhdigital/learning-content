@@ -17,6 +17,7 @@
 
       //  If randomNumber is equal to zero then:
             if (randomNumber === 0) {
+                $("#guess1").html("<b>Heads</b>");
                 $("#coin-image").html("<img src = 'http://random-ize.com/coin-flip/us-quarter/us-quarter-front.jpg' />");
             }
       //  Find the div with an id of coin-image.
@@ -25,6 +26,7 @@
 
       // Else:
       else {
+        $("#guess1").html("<b>Tail</b>");
         $("#coin-image").html("<img src = 'http://random-ize.com/coin-flip/us-quarter/us-quarter-back.jpg' />");
   
       }
