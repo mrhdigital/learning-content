@@ -80,6 +80,8 @@
       //  Find the div with an id of guess. Update it with the word "Tails" bolded.
       $("#guess").html("<b>Tails</b>");
       //  Call the flipThatCoin function and pass value 1 into it.
+      $("#coin-image1").html("<img src = 'http://random-ize.com/coin-flip/us-quarter/us-quarter-back.jpg' />");
+
       flipThatCoin(1);
 
     });
