@@ -64,6 +64,8 @@
       headsCount++;
       $("#heads-chosen").text(headsCount);
       $("#guess").html("<b>Heads</b>");
+      $("#coin-image1").html("<img src = 'http://random-ize.com/coin-flip/us-quarter/us-quarter-front.jpg' />");
+
       flipThatCoin(0);
     });
 
