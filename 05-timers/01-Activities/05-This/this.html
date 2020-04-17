@@ -48,11 +48,13 @@
 
       //  3. Put something inside of the following function so that it works
       fullName: function() {
+          console.log(this.firstName + " " + this.lastName);
 
       }
     };
 
     //  4. What will the console log output if the next function gets called?
+    // Answer: it will console bob, the object.
     bob.whoIsBob();
 
     //  5. Fill in the code inside the fullName function above
@@ -62,9 +64,11 @@
 
     //  6. Make the "theChosenOne" function, log "Keanu Reeves"
     //     Our code goes below....
+    var firstName = "Keanu";
+    var lastName = "Reeves";
 
-
-
+    // window.firstName is Kenau
+    // window.lastName is Reeves
     //     Without editing any of the code below.
     //     Use only the properties in "this."
     var theChosenOne = function() {
