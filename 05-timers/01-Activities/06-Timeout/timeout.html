@@ -54,7 +54,12 @@
       
       //  Cancel window alert on click.
         //  Clear the timeout, and stop the window alert.
-      
+        $("#window-cancel").on("click", function() {
+          // Clear the button alert's timeout.
+
+           clearTimeout(windowTimeout);
+        });
+
     </script>
 
   </body>
