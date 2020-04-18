@@ -1,7 +1,9 @@
 // Step 1:
       // Use the following link inside the Audio function below:
       // https://p.scdn.co/mp3-preview/ed5a443bc86176135ebca8a114f66f4d814d4c90
+      $("#start").on("click", function () {
       
+        $("#timer-left").remove();
       
       var audio = new Audio("raven.mp3");
 
@@ -52,3 +54,4 @@
         audio.play();
 
       }
+    });
