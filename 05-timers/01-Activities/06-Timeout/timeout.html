@@ -39,7 +39,11 @@
         }, 1000);
       //  Start on click.
         //  Set the button alert's timeout to run three seconds after the function's called.
-
+        $("#start").on("click", function() {
+            delayButtonAlert = setTimeout(function() {
+                alert("Alert#2");
+            }, 3000);
+        });
       //  Cancel on click.
         // Clear the button alert's timeout.
       
