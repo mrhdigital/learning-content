@@ -45,7 +45,12 @@
             }, 3000);
         });
       //  Cancel on click.
-        // Clear the button alert's timeout.
+        $("#cancel").on("click", function() {
+          // Clear the button alert's timeout.
+
+           clearTimeout(delayButtonAlert);
+        });
+
       
       //  Cancel window alert on click.
         //  Clear the timeout, and stop the window alert.
