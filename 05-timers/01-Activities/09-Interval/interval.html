@@ -75,11 +75,16 @@ setting the new `intervalId` making sure we would not have multiple instances.*/
             }
         }
 
+        // This stop the function
         function stop() {
 
+            // Clears our intervalId
+            // We just pass the name of the interval
+            // to the clearInterval function
             clearInterval(intervalId);
         }
 
+        // Execute the run function.
         run();
 
     </script>
