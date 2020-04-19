@@ -35,7 +35,7 @@ setting the new `intervalId` making sure we would not have multiple instances.*/
     <script type="text/javascript">
         // Interval Demonstration
         // Set our number counter to 100/
-        var number = 100;
+        var number = 3;
         // Variable that will hold our interval ID when we excute
         // the "run" function
         var intervalId;
@@ -65,7 +65,7 @@ setting the new `intervalId` making sure we would not have multiple instances.*/
             $("#show-number").html("<h2>" + number + "</h2>");
 
             // Once number his the zero...
-            if (number === 0) {
+            if (number <= 0) {
 
                 // ...Run the stop function
                 stop();
@@ -84,7 +84,7 @@ setting the new `intervalId` making sure we would not have multiple instances.*/
             clearInterval(intervalId);
         }
 
-        // Execute the run function.
+        // Execute the run function, program starts with the run function
         run();
 
     </script>
