@@ -2,19 +2,26 @@
       // Use the following link inside the Audio function below:
       // https://p.scdn.co/mp3-preview/ed5a443bc86176135ebca8a114f66f4d814d4c90
       $("#start").on("click", function () {
-      
+        $("#timer-left").removeall();
+
+        clearTimeout(time1);
+        clearTimeout(time2);
+        clearTimeout(time3);
         $("#timer-left").remove();
-      
+      var time1;
+      var time2;
+      var time3;
+
       var audio = new Audio("raven.mp3");
 
       //  Step 2: do the following between the --- comments
       //  after 5 seconds, execute the fiveSeconds function
-      setTimeout(fiveSeconds, 1000 * 5);
+     time1 = setTimeout(fiveSeconds, 1000 * 5);
       //  after 10 seconds, execute the tenSeconds function
-      setTimeout(tenSeconds, 1000 * 10);
+     time2 = setTimeout(tenSeconds, 1000 * 10);
 
       //  after 15 seconds, execute the timeUp function
-      setTimeout(timeUp, 1000 * 15);
+     time3 =  setTimeout(timeUp, 1000 * 15);
 
       // ---------------------
       // CODE STEP TWO HERE
