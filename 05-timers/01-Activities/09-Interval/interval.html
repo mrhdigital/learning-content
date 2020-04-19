@@ -54,6 +54,7 @@ setting the new `intervalId` making sure we would not have multiple instances.*/
         // Clearing the intervalId prior to setting our new intervalId will not
         // allow the multiple instances
     function run() {
+        clearInterval(intervalId);
       intervalId = setInterval(decrement, 1000);
     }
 
