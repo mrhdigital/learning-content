@@ -47,6 +47,12 @@ setting the new `intervalId` making sure we would not have multiple instances.*/
   // When the resume button gets clicked, execute the run function
     $("#resume").on("click", run);
 
+
+        // The run function sets an interval
+        // that run the decrement function once a second.
+        // ***** BUG FIX ******
+        // Clearing the intervalId prior to setting our new intervalId will not
+        // allow the multiple instances
     function run() {
       intervalId = setInterval(decrement, 1000);
     }
