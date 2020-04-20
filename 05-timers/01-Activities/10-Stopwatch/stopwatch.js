@@ -7,3 +7,21 @@ window.onload = function() {
     $("#start").on("click", stopwatch.start); 
 
 }
+
+
+// Our stopwatch object
+var stopwatch = {
+    time: 0,
+    lap: 1,
+
+    reset: function() {
+        stopwatch.time = 0;
+        stopwatch.lap = 1;
+
+        // Done: change the "display" div to "00:00."
+        $("$display").text("00:00");
+
+        // Done: Empy the "laps" div.
+        $("#laps").text("");
+    }
+}
