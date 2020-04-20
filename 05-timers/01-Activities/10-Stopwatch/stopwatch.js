@@ -6,7 +6,13 @@ window.onload = function() {
     $("#reset").on("click", stopwatch.reset); 
     $("#start").on("click", stopwatch.start); 
 
-}
+};
+
+// Variable that will hold our setInterval that runs the stopwatch
+var intervalId;
+
+// prevents the clock from being sped up unnecessarily
+var clockRunning = false;
 
 
 // Our stopwatch object
@@ -23,5 +29,10 @@ var stopwatch = {
 
         // Done: Empy the "laps" div.
         $("#laps").text("");
+    },
+
+    start: function() {
+
+        //
     }
 }
