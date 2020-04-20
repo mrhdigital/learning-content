@@ -57,7 +57,7 @@ window.onload = function() {
     count: function() {
   
       //  TODO: increment time by 1, remember we cant use "this" here.
-  
+        stopwatch.time++;
       //  TODO: Get the current time, pass that into the stopwatch.timeConverter function,
       //        and save the result in a variable.
   
