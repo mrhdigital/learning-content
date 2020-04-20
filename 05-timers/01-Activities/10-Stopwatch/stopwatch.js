@@ -34,9 +34,7 @@ window.onload = function() {
     start: function() {
   
       //  TODO: Use setInterval to start the count here and set the clock to running.
-      if (!clockRunning) {
-  
-      }
+      counter = setInterval(stopwatch.count, 1000);
   
     },
     stop: function() {
@@ -60,9 +58,11 @@ window.onload = function() {
         stopwatch.time++;
       //  TODO: Get the current time, pass that into the stopwatch.timeConverter function,
       //        and save the result in a variable.
+      var converted = stopwatch.timeConverter(stopwatch.time);
+      console.log(converted);
   
       //  TODO: Use the variable you just created to show the converted time in the "display" div.
-  
+        $("#display").html(converted);
     },
   
     //  THIS FUNCTION IS DONE FOR US!
