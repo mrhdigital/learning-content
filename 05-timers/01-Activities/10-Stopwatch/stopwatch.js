@@ -33,15 +33,18 @@ window.onload = function() {
     },
   
     start: function() {
-  
+        if(!clockRunning) {
       //  TODO: Use setInterval to start the count here and set the clock to running.
       counter = setInterval(stopwatch.count, 1000);
+      clockRunning = true;
   
-    },
+    }
+},
     stop: function() {
   
       //  TODO: Use clearInterval to stop the count here and set the clock to not be running.
         clearInterval(counter);
+        clockRunning = false;
     },
   
     recordLap: function() {
