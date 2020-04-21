@@ -28,7 +28,8 @@ window.onload = function() {
       stopwatch.lap = 1;
   
       //  TODO: Change the "display" div to "00:00."
-  
+        $("#display").html('00:00');
+        $("#laps").html("");
     },
   
     start: function() {
