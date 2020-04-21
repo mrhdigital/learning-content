@@ -47,10 +47,13 @@ window.onload = function() {
   
       //  TODO: Get the current time, pass that into the stopwatch.timeConverter function,
       //        and save the result in a variable.
-  
+      var converted = stopwatch.timeConverter(stopwatch.time);
+
       //  TODO: Add the current lap and time to the "laps" div.
+      $("#laps").append('<p>Lap ' + stopwatch.lap + ' : ' + converted + '</p>');
   
       //  TODO: Increment lap by 1. Remember, we can't use "this" here.
+      stopwatch.lap++;
     },
     count: function() {
   
