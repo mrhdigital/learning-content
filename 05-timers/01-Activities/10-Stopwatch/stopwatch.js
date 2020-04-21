@@ -40,7 +40,7 @@ window.onload = function() {
     stop: function() {
   
       //  TODO: Use clearInterval to stop the count here and set the clock to not be running.
-  
+        clearInterval(counter);
     },
   
     recordLap: function() {
