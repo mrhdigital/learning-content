@@ -2,7 +2,7 @@
 // Students: follow the instructions below:
 
 // TODO: Put links to our images in this image array.
-var images = ['images/bootstrap.png', 'images/github-logo.png', 'images/logo_JavaScript.png'];
+var images = ['images/bootstrap.png', 'images/github-logo.jpg', 'images/logo_JavaScript.png', 'images/loading.gif'];
 
 // Variable showImage will hold the setInterval when we start the slideshow
 var showImage;
@@ -19,7 +19,7 @@ $("#stop").click(stopSlideshow);
 // This function will replace display whatever image it's given
 // in the 'src' attribute of the img tag.
 function displayImage() {
-  $("#image-holder").html("<img src=" + images[count] + " width='400px'>");
+  $("#image-holder").html("<img src=" + images[3] + " width='400px'>");
 }
 
 function nextImage() {
