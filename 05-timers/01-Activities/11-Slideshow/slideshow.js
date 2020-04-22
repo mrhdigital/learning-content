@@ -2,7 +2,7 @@
 // Students: follow the instructions below:
 
 // TODO: Put links to our images in this image array.
-var images = ['\images\bootstrap.png', '\images\github-logo.png'];
+var images = ['images/bootstrap.png', 'images/github-logo.png', 'images/logo_JavaScript.png'];
 
 // Variable showImage will hold the setInterval when we start the slideshow
 var showImage;
