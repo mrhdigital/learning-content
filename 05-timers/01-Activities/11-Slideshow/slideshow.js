@@ -19,7 +19,7 @@ $("#stop").click(stopSlideshow);
 // This function will replace display whatever image it's given
 // in the 'src' attribute of the img tag.
 function displayImage() {
-  $("#image-holder").html("<img src=" + images[3] + " width='400px'>");
+  $("#image-holder").html("<img src=" + images[count] + " width='400px'>");
 }
 
 function nextImage() {
@@ -28,7 +28,7 @@ function nextImage() {
 count++;
 
   // TODO: Show the loading gif in the "image-holder" div.
-$("#image-holder").html("imge src=" + images[count] + "width = '400px' >");
+$("#image-holder").html("<imge src=" + images[count] + "width = '400px' >");
 
   // TODO: Use a setTimeout to run displayImage after 1 second.
 
@@ -41,11 +41,12 @@ setTimeout(displayImage,1000);
 function startSlideshow() {
 
   // TODO: Use showImage to hold the setInterval to run nextImage.
-
+  showImage = setInterval(nextImage,1000);
 }
 function stopSlideshow() {
 
   // TODO: Put our clearInterval here:
+  clearInterval(showImage);
 
 }
 
