@@ -7,6 +7,8 @@ var images = ['images/bootstrap.png', 'images/github-logo.jpg', 'images/logo_Jav
 // Variable showImage will hold the setInterval when we start the slideshow
 var showImage;
 
+var slideshowRunning = false;
+
 // Count will keep track of the index of the currently displaying picture.
 var count = 0;
 
@@ -39,9 +41,12 @@ setTimeout(displayImage,1000);
   }
 }
 function startSlideshow() {
+    if (!slideshowRunning) {
 
   // TODO: Use showImage to hold the setInterval to run nextImage.
   showImage = setInterval(nextImage,3000);
+  slideshowRunning = true;
+}
 }
 function stopSlideshow() {
 
