@@ -49,8 +49,22 @@ var unsortedArr = [
     181, 485, 495, 81, 169, 294, 79, 400, 92, 104, 249
   ];
 
-  var arraySort = function() {
-      for(var i = 0; i < unsortedArr.length; i++) {
+  var bubbleSort = function(arr) {
+      for(var i = 0; i < arr.length; i++) {
           console.log(i);
       }
+      return arr;
   }
+
+
+  // Insert the contents of the unsorted array into the #start div
+  document.querySelector('#start').innerText = unsortedArr.join(", ");
+
+  // Get a reference to the go button in the DOM, add a click event listener to it
+  var goBtn = document.querySelector("#go");
+
+  goBtn.addEventListener("click", function() {
+
+    document.querySelector("#result").innerText = bubbleSort(unsortedArr);
+
+  });
