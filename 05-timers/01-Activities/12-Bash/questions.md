@@ -2,11 +2,11 @@
 
 1. What is the command to create a file?
 
-   * `touch <filename>`
+   * `touch <filename>` 
 
 2. What is a command to create a folder?
 
-   * `mkdir <filename>`
+   * `mkdir <filename>` 
 
 3. What is the command to delete a file?
 
