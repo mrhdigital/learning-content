@@ -51,7 +51,12 @@ var unsortedArr = [
 
   var bubbleSort = function(arr) {
       for(var i = 0; i < arr.length; i++) {
-          console.log(i);
+         // console.log(i);
+         if(arr[i] > arr[i + 1]) {
+             var temp = arr[i];
+             arr[i] = arr[i + 1];
+             arr[i + 1] = temp;
+         }
       }
       return arr;
   }
@@ -65,6 +70,5 @@ var unsortedArr = [
 
   goBtn.addEventListener("click", function() {
 
-    document.querySelector("#result").innerText = bubbleSort(unsortedArr);
-
+    document.querySelector("#result").innerText = bubbleSort(unsortedArr).join(", ");
   });
