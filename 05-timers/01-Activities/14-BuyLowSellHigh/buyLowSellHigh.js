@@ -12,6 +12,10 @@ var biggestProfit = function(stockArray, sharesBought) {
         // do some stuff
         var minPrice = stockArray[0];
         var maxprice = stockArray[1] - stockArray[0];
+
+        for(var i = 1; i < stockArray.length; i++) {
+            var currentPrice = stockArray[i];
+        }
     } else {
         console.log("You need a least 2 prices to continue!");
     }
