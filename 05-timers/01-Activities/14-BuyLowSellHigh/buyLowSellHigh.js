@@ -15,6 +15,7 @@ var biggestProfit = function(stockArray, sharesBought) {
 
         for(var i = 1; i < stockArray.length; i++) {
             var currentPrice = stockArray[i];
+            var potentialProfit = currentPrice - minPrice;
         }
     } else {
         console.log("You need a least 2 prices to continue!");
