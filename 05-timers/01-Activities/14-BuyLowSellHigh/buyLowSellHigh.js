@@ -8,6 +8,11 @@ var stockPrices = [1.32, 1.14, 1.45, 1.20, 1.34, 1.74, 1.18, 1.90, 1.1];
 
 // Your Biggest Profit function
 var biggestProfit = function(stockArray, sharesBought) {
+    if(stockArray.length > 2) {
+        // do some stuff
+    } else {
+        console.log("You need a least 2 prices to continue!");
+    }
 
 };
 
