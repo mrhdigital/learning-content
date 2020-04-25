@@ -3,7 +3,8 @@
 
 
 // Stock Prices
-var stockPrices = [1.32, 1.14, 1.45, 1.20, 1.34, 1.74, 1.18, 1.90, 1.1];
+var stockPrices = [1.32, 1.14, 1.45, 1.20, 1.34, 1.74, 1.18, 1.90, 1.1]; //7600
+//var stockPrices = [1.32, 1.14, 1.45, 1.20, 1.34, 1.74, 1.18, 1.90, 1.1]; // 10000
 
 
 // Your Biggest Profit function
@@ -11,12 +12,20 @@ var biggestProfit = function(stockArray, sharesBought) {
     if(stockArray.length > 2) {
         // do some stuff
         var minPrice = stockArray[0];
-        var maxprice = stockArray[1] - stockArray[0];
+        var maxprofit = stockArray[1] - stockArray[0];
 
         for(var i = 1; i < stockArray.length; i++) {
             var currentPrice = stockArray[i];
             var potentialProfit = currentPrice - minPrice;
+
+            if(maxprofit < potentialProfit) {
+                maxprofit = potentialProfit;
+            }
+            if(minPrice > currentPrice) {
+                minPrice = currentPrice;
+            }
         }
+        return maxprofit * sharesBought;
     } else {
         console.log("You need a least 2 prices to continue!");
     }
