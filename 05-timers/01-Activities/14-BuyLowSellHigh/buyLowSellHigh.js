@@ -4,7 +4,7 @@
 
 // Stock Prices
 var stockPrices = [1.32, 1.14, 1.45, 1.20, 1.34, 1.74, 1.18, 1.90, 1.1]; //7600
-//var stockPrices = [1.32, 1.14, 1.45, 1.20, 1.34, 1.74, 1.18, 1.90, 1.1]; // 10000
+var loss = [135, 34, 25, 22, 21, 4, 1]; // 10000
 
 
 // Your Biggest Profit function
