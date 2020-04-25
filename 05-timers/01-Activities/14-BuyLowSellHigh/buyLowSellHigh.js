@@ -23,18 +23,30 @@ var biggestProfit = function(stockArray, sharesBought) {
         // Loops over the array, skipping the first value, since it's already
         // the minPrice and we can't sell when we buy - i starts with 1 instead of 0
         for(var i = 1; i < stockArray.length; i++) {
+
+
+            // Temp hold the current price in a variable
             var currentPrice = stockArray[i];
+
+            // Potential profit is the current price minus the minPrice
             var potentialProfit = currentPrice - minPrice;
 
+            // If maxProfit is less than the current potential profit, update the maxProfit
             if(maxprofit < potentialProfit) {
                 maxprofit = potentialProfit;
             }
+
+            // If minPrice is more than the currentPrice, update the minPrice
             if(minPrice > currentPrice) {
                 minPrice = currentPrice;
             }
         }
+
+        // Multiply the maxProfit by the number of shares to get the total
         return maxprofit * sharesBought;
     } else {
+
+        // Error if the array has 2 or less prices in it
         console.log("You need a least 2 prices to continue!");
     }
 
