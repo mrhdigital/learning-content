@@ -9,11 +9,19 @@ var loss = [135, 34, 25, 22, 21, 4, 1]; // 10000
 
 // Your Biggest Profit function
 var biggestProfit = function(stockArray, sharesBought) {
+    
+    // Check to make sure that array is greater than 2
     if(stockArray.length > 2) {
         // do some stuff
+
+        //Set the Initial minPrice, you can buy nay earlier than the first value
         var minPrice = stockArray[0];
+
+        // Set initial max profit, your first opportunity to sell is the second number
         var maxprofit = stockArray[1] - stockArray[0];
 
+        // Loops over the array, skipping the first value, since it's already
+        // the minPrice and we can't sell when we buy - i starts with 1 instead of 0
         for(var i = 1; i < stockArray.length; i++) {
             var currentPrice = stockArray[i];
             var potentialProfit = currentPrice - minPrice;
