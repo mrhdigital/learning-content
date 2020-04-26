@@ -23,3 +23,7 @@ var files = ["pavans_first_birthday.mov",
 // We set up arrays for all possible file extensions.
 var imageExtentions = ["jpg", "gif", "png", "jpeg"];
 var videoExtensions = ["move", "avi", "mp4", "mpg"];
+
+// We create arrays where we can place our results.
+var images = [];
+var videos = [];
