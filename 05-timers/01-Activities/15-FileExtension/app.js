@@ -19,3 +19,7 @@ var files = ["pavans_first_birthday.mov",
   "omg_my_sneakers.avi",
   "cat_you_are_the_worst.mp4"
 ];
+
+// We set up arrays for all possible file extensions.
+var imageExtentions = ["jpg", "gif", "png", "jpeg"];
+var videoExtensions = ["move", "avi", "mp4", "mpg"];
