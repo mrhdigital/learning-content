@@ -39,6 +39,7 @@ var biggestProfit = function(stockArray, sharesBought) {
             // If minPrice is more than the currentPrice, update the minPrice
             if(minPrice > currentPrice) {
                 minPrice = currentPrice;
+                console.log(minPrice);
             }
         }
 
