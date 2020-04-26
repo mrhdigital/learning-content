@@ -27,3 +27,9 @@ var videoExtensions = ["move", "avi", "mp4", "mpg"];
 // We create arrays where we can place our results.
 var images = [];
 var videos = [];
+
+var extensionSorter = function (fileArray) {
+    for(var i = 0; i < fileArray.length; i++) {
+        var fileExt = fileArray[i].split(".").pop();
+    }
+}
