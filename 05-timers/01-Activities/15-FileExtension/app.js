@@ -30,6 +30,9 @@ var videos = [];
 
 var extensionSorter = function (fileArray) {
     for(var i = 0; i < fileArray.length; i++) {
-        var fileExt = fileArray[i].split(".").pop();
+        var fileExt = fileArray[i].split("_");
+        console.log(fileExt);
     }
 }
+
+extensionSorter(files);
