@@ -32,6 +32,12 @@ var extensionSorter = function (fileArray) {
     for(var i = 0; i < fileArray.length; i++) {
         var fileExt = fileArray[i].split(".").pop();
         console.log(fileExt);
+
+        // Now we check the file extension against our array of possible image extensions.
+        if(imageExtentions.indexOf(fileExt) !== -1) {
+            images.push(fileArray[i]);
+            console.log(images);
+        }
     }
 }
 
