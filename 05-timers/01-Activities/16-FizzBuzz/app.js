@@ -4,7 +4,11 @@ var FizzBuzz = function() {
 
         if((i % 3 === 0) && (i % 5 === 0)){
             console.log("FizzBuzz");
-        } else{
+        } else if(i % 3 === 0) {
+            console.log("Fizz");
+        }
+        
+        else{
         console.log(i);
         }
     }
