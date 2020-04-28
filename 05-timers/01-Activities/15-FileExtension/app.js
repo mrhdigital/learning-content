@@ -38,6 +38,10 @@ var extensionSorter = function (fileArray) {
             images.push(fileArray[i]);
             console.log(images);
         }
+        else if (videoExtensions.indexOf(fileExt) !== -1) {
+            videos.push(fileArray[i]);
+            console.log(videos);
+        }
     }
 }
 
