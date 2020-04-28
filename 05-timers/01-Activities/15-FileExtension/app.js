@@ -36,13 +36,15 @@ var extensionSorter = function (fileArray) {
         // Now we check the file extension against our array of possible image extensions.
         if(imageExtentions.indexOf(fileExt) !== -1) {
             images.push(fileArray[i]);
-            console.log(images);
+            //console.log(images);
         }
         else if (videoExtensions.indexOf(fileExt) !== -1) {
             videos.push(fileArray[i]);
-            console.log(videos);
+            //console.log(videos);
         }
     }
+    console.log(videos);
+    console.log(images);
 }
 
 extensionSorter(files);
