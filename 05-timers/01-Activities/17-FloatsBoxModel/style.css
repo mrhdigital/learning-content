@@ -26,6 +26,10 @@ body {
 
     background-color: #b20;
   }
+
+  #helper {
+      clear: both;
+  }
   
   #text-wrapper {
     width: 1024px;
