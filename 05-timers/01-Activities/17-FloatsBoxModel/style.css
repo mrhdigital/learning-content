@@ -22,7 +22,10 @@ body {
     float: right;
     width: 25%;
     padding: 2%;
+    height: 653px;
+
     box-sizing: border-box;
+    overflow: auto;
 
     background-color: #b20;
   }
