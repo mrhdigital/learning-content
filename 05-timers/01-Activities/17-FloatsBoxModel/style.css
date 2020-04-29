@@ -13,6 +13,8 @@ body {
     float: left;
     width: 75%;
     padding: 2%;
+    box-sizing: border-box;
+
     background-color: cornflowerblue;
   }
   
@@ -20,6 +22,8 @@ body {
     float: right;
     width: 25%;
     padding: 2%;
+    box-sizing: border-box;
+
     background-color: #b20;
   }
   
