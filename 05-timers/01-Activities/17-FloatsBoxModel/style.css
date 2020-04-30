@@ -37,5 +37,6 @@ body {
   #text-wrapper {
     width: 1024px;
     background-color: antiquewhite;
+    margin: 0 auto;
   }
   
