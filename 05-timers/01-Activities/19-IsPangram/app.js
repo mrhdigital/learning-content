@@ -20,7 +20,7 @@ var isPangram = function(string) {
  
     }
 
-    if(lettersHolder.length === 26) {
+    if(letterHolder.length === 26) {
     console.log("Found Pangram");
     }
     else {
