@@ -12,9 +12,10 @@ var isPangram = function(string) {
  var letters = string.toLowerCase().replace(/[^a-z]+/g, "").split("");
  console.log(letters);
 
- for (var i = 0; i < string.length; i++) {
-     if (string[i].indexOf(letterHolder) === -1) {
-         console.log("push to letterHolder")
+ for (var i = 0; i < letters.length; i++) {
+     if (letterHolder.indexOf(letters[i]) === -1) {
+         //console.log("push to letterHolder")
+         letterHolder.push(letters[i]);
      }
  
 
