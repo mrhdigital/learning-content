@@ -18,10 +18,13 @@ var isPangram = function(string) {
          letterHolder.push(letters[i]);
      }
  
-
-
-    else {
-    console.log("I will give answere here");
     }
-}
+
+    if(lettersHolder.length === 26) {
+    console.log("Found Pangram");
+    }
+    else {
+        console.log("Not Found Pangram");
+    }
+
 }
