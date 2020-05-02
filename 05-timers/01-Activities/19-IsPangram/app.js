@@ -7,6 +7,8 @@ var isPangram = function(string) {
     if(string.length < 26) {
         console.log("False: It is NOT a pangram");
     }
+
+    else {
  var letterHolder = [];
 
  var letters = string.toLowerCase().replace(/[^a-z]+/g, "").split("");
@@ -26,5 +28,5 @@ var isPangram = function(string) {
     else {
         console.log("Not Found Pangram");
     }
-
 }
+};
