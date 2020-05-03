@@ -27,6 +27,7 @@ function addTask() {
     // Nest our content in another div in another div
     // With a span containing an X.
     // Notice that id? we can delete tha task whenever the user clicks the span.
+    $("#tasks").append("<div" + task + "<span id = 'delete'>X</span> </div>");
 }
 /*
  *  Use the provided starter HTML to make a list app.
