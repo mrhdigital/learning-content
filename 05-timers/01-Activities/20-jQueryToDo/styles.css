@@ -14,3 +14,14 @@ h1 {
     height:32px;
     font-size: 24px;
   }
+  button { height: 32px; }
+
+  #tasks {
+    background-color: antiquewhite;
+    width:60%;
+    height:400px;
+    overflow: auto;
+    margin: 0 auto;
+    color:black;
+  }
+
