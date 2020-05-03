@@ -17,6 +17,12 @@ $("input").keypress(function(event) {
         addTask();
     }
 });
+
+// function to add task.
+function addTask() {
+    // Get the contect (value) of the input box.
+    var task = $("#new-task").val();
+}
 /*
  *  Use the provided starter HTML to make a list app.
  *  This app will take text from an input box
