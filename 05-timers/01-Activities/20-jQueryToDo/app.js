@@ -22,6 +22,11 @@ $("input").keypress(function(event) {
 function addTask() {
     // Get the contect (value) of the input box.
     var task = $("#new-task").val();
+
+    //Append that content to the #task div.
+    // Nest our content in another div in another div
+    // With a span containing an X.
+    // Notice that id? we can delete tha task whenever the user clicks the span.
 }
 /*
  *  Use the provided starter HTML to make a list app.
