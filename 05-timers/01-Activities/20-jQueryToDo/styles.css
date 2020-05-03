@@ -25,3 +25,18 @@ h1 {
     color:black;
   }
 
+  #tasks div {
+    border:1px solid grey;
+    margin: 2%;
+    font-size: 32px;
+    padding:5%;
+    box-sizing: border-box;
+  }
+  #delete {
+    cursor:pointer;
+    float:right;
+    color:red;
+    font-weight: bold;
+  }
+
+
