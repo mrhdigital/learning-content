@@ -7,13 +7,14 @@ $("button").click(addTask);
 // Add a listener to the document.
 // It should keep an ear out for a click on elements with an id of "delete".
 // We can't use click, because the element is dynamically created
+$(document).on("click", "#delete", removeTask);
 
 
 // When a user presses any key on their keyboard,
 $("input").keypress(function(event) {
 
     // listen to see that key was enter.
-    if (event.which == 13) {
+    if (event.which === 13) {
         addTask();
     }
 });
@@ -27,7 +28,10 @@ function addTask() {
     // Nest our content in another div in another div
     // With a span containing an X.
     // Notice that id? we can delete tha task whenever the user clicks the span.
-    $("#tasks").append("<div" + task + "<span id = 'delete'>X</span> </div>");
+    $("#tasks").append("<div>" + task + "<span id = 'delete'>X</span> </div>");
+
+    // Clear the content of the input box.
+    $("#new-task").val("");
 }
 /*
  *  Use the provided starter HTML to make a list app.
