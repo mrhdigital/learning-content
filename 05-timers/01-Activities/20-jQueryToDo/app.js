@@ -36,6 +36,8 @@ function addTask() {
 
 // Function to remove a task
 function removeTask() {
+    // Grab the closest div to the element that was clicked and remove it.
+    // In this case, the closet element is the one that's encapsulating it.)
     
 }
 /*
