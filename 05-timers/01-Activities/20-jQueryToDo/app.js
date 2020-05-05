@@ -33,6 +33,11 @@ function addTask() {
     // Clear the content of the input box.
     $("#new-task").val("");
 }
+
+// Function to remove a task
+function removeTask() {
+    
+}
 /*
  *  Use the provided starter HTML to make a list app.
  *  This app will take text from an input box
