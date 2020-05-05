@@ -78,6 +78,13 @@
         height: auto;
         padding: 0;
     }
+    ul {
+        text-align: center;
+    }
+    li {
+        padding: 10px;
+        margin: 0 5%;
+    }
 } 
 
 @media screen and (max-width: 768px) {
