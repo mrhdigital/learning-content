@@ -64,6 +64,15 @@
     nav {
         background-color: green;
     }
+    h1 {
+        display:  block;
+        text-align: center;
+    }
+
+    #menu{
+        display: block;
+        float: none;
+    }
 } 
 
 @media screen and (max-width: 768px) {
