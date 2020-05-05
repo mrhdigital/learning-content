@@ -72,6 +72,11 @@
     #menu{
         display: block;
         float: none;
+        background-color:  maroon;
+    }
+    nav {
+        height: auto;
+        padding: 0;
     }
 } 
 
