@@ -59,6 +59,14 @@ function palindromeDetector (s) {
         word[i] = words[i].replace(/[^a-zA-Z]+/g, "");
 
         var letters = words[i].split("");
+ 
+
+        var reversedAndJoined  = "";
+
+        // Loops backwards over the letter array.
+        for(var l = letters.length - 1; l >= 0; l--) {
+        
+        }
     }
 }
 
