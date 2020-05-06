@@ -1,4 +1,4 @@
-alert("Linked");
+//alert("Linked");
 
 // Reverse in Place w/Palindrome Detector
 
@@ -35,4 +35,22 @@ alert("Linked");
 // Remove all "special characters" (commas, periods, etc).
 // Do not use the reverse() method.
 
+var sentence1 = "Otto bought a racecar he cannot afford.";
+var sentence2 = "Otto lost the deed to his house.";
+var sentence3 = "Otto needs Xanax.";
+
+// Example for special characters bonus.
+var sentence4 = "On the way to get Xanax, Otto found a kayak. He couldn't believe his luck!";
+
+function palindromeDetector (s) {
+    // To hold the array of reversed words.
+
+    var reversedArray = [];
+
+    // To hold split the sentence into an array of words.
+    var words = s.split(" ");
+
+    // To hold words to be shown on page.
+    var showOnPage = [];
+}
 
