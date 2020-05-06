@@ -52,5 +52,13 @@ function palindromeDetector (s) {
 
     // To hold words to be shown on page.
     var showOnPage = [];
+
+    // Loops over each word
+    for(var i = 0; i < words.length; i++) {
+
+        word[i] = words[i].replace(/[^a-zA-Z]+/g, "");
+
+        var letters = words[i].split("");
+    }
 }
 
