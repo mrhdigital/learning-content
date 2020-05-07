@@ -65,10 +65,14 @@ function palindromeDetector (s) {
 
         // Loops backwards over the letter array.
         for(var l = letters.length - 1; l >= 0; l--) {
+            // Add the letters to the string above.
+
+            reversedAndJoined += letters[l];
         
-            // Adds individual reversed word to the array of reversed words.
-            reversedArray.push(reversedAndJoined);
         }
+           // Adds individual reversed word to the array of reversed words.
+      reversedArray.push(reversedAndJoined);
+
     }
 
     document.getElementById("result").innerHTML = reversedArray.join(" ");
