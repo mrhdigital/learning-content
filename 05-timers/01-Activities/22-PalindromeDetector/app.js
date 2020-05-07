@@ -83,6 +83,10 @@ function palindromeDetector (s) {
             // then pushed it to the showPage array.
             showOnPage.push("<span style= 'color:red'>" + reversedArray[j] + "</span>");
         }
+        else {
+            // Not a palindrom, just push the plain word.
+            showOnPage.push(reversedArray[j]);
+        }
 
     }
 
