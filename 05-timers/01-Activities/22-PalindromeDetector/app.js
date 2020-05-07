@@ -74,7 +74,18 @@ function palindromeDetector (s) {
       reversedArray.push(reversedAndJoined);
 
     }
+    for(var j = 0; j < reversedArray.length; j++) {
+        // Check to see if a word is longer than one letter and checks the reversed word against
+        // the non-reversed word.
+        // (Using toLowerCase so it will ignore any capital letters).
+        if(reversedArray[j].length > 1 && reversedArray[j].toLocaleLowerCase() === word[j].toLocaleLowerCase()) {
+            // if its palindrom, it wraps the word in a span to make it red,
+            // then pushed it to the showPage array.
+            
+        }
 
-    document.getElementById("result").innerHTML = reversedArray.join(" ");
+    }
+
+    document.getElementById("result1").innerHTML = reversedArray.join(" ");
 }
 
