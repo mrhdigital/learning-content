@@ -91,5 +91,8 @@ function palindromeDetector (s) {
     }
 
     document.getElementById("result1").innerHTML = reversedArray.join(" ");
+
+    // Replace the contents of the "result" div with the merged showOnpage array.
+    document.getElementById("reslut").innerHTML = showOnPage.join(" ");
 }
 
