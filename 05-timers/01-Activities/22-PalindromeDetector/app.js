@@ -42,7 +42,7 @@ var sentence3 = "Otto needs Xanax.";
 // Example for special characters bonus.
 var sentence4 = "On the way to get Xanax, Otto found a kayak. He couldn't believe his luck!";
 
-function palindromeDetector (s) {
+function palindromeDetector(s) {
     // To hold the array of reversed words.
 
     var reversedArray = [];
@@ -54,31 +54,46 @@ function palindromeDetector (s) {
     var showOnPage = [];
 
     // Loops over each word
-    for(var i = 0; i < words.length; i++) {
+    for (var i = 0; i < words.length; i++) {
 
         words[i] = words[i].replace(/[^a-zA-Z]+/g, "");
 
-        var letters = words[i].split("");
- 
 
-        var reversedAndJoined  = "";
+        // Or
+        // Basic, just replacing the period.
+        // words[i] = words[i].replace(".", "");
+
+        // Splits current word into an array of letters.
+        var letters = words[i].split("");
+
+        // Using .reverse method
+        // Reverses letter array and then joins them into a string.
+        // reversedAndJoined = letters.reverse().join("");
+
+        // Or
+
+        // Without using .reverse
+        // Blank string to hold the reversed word.
+        var reversedAndJoined = "";
 
         // Loops backwards over the letter array.
-        for(var l = letters.length - 1; l >= 0; l--) {
+        for (var l = letters.length - 1; l >= 0; l--) {
             // Add the letters to the string above.
 
             reversedAndJoined += letters[l];
-        
+
         }
-           // Adds individual reversed word to the array of reversed words.
-      reversedArray.push(reversedAndJoined);
+        // Adds individual reversed word to the array of reversed words.
+        reversedArray.push(reversedAndJoined);
 
     }
-    for(var j = 0; j < reversedArray.length; j++) {
+    // Loops over the array of reversed words.
+
+    for (var j = 0; j < reversedArray.length; j++) {
         // Check to see if a word is longer than one letter and checks the reversed word against
         // the non-reversed word.
         // (Using toLowerCase so it will ignore any capital letters).
-        if(reversedArray[j].length > 1 && reversedArray[j].toLocaleLowerCase() === words[j].toLocaleLowerCase()) {
+        if (reversedArray[j].length > 1 && reversedArray[j].toLocaleLowerCase() === words[j].toLocaleLowerCase()) {
             // if its palindrom, it wraps the word in a span to make it red,
             // then pushed it to the showPage array.
             showOnPage.push("<span style= 'color:red'>" + reversedArray[j] + "</span>");
