@@ -81,7 +81,7 @@ function palindromeDetector (s) {
         if(reversedArray[j].length > 1 && reversedArray[j].toLocaleLowerCase() === word[j].toLocaleLowerCase()) {
             // if its palindrom, it wraps the word in a span to make it red,
             // then pushed it to the showPage array.
-            
+            showOnPage.push("<span style= 'color:red'>" + reversedArray[j] + "</span>");
         }
 
     }
