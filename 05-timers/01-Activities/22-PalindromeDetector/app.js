@@ -89,6 +89,7 @@ function palindromeDetector (s) {
         }
 
     }
+    // Replace the contents of the "result1" div with the merged reversedArray array.
 
     document.getElementById("result1").innerHTML = reversedArray.join(" ");
 
