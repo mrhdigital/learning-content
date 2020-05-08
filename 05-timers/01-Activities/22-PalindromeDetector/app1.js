@@ -21,8 +21,11 @@ function stringToArrayOfWords(s) {
         var reveredArray = [];
         var reverseAndJoin = "";
 
-        for( var j = letters.length -1; j >= 0; J--) {
+        for( var j = letters.length -1; j >= 0; j--) {
             reverseAndJoin += letters[j];
+            console.log(reverseAndJoin);
+            reveredArray.pop(reverseAndJoin);
+            console.log(reveredArray);
 
         }
     }
