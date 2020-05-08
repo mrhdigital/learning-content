@@ -49,6 +49,7 @@ function palindromeDetector(s) {
 
     // To hold split the sentence into an array of words.
     var words = s.split(" ");
+    console.log(words);
 
     // To hold words to be shown on page.
     var showOnPage = [];
@@ -57,6 +58,7 @@ function palindromeDetector(s) {
     for (var i = 0; i < words.length; i++) {
 
         words[i] = words[i].replace(/[^a-zA-Z]+/g, "");
+        console.log(words[i]);
 
 
         // Or
@@ -85,6 +87,7 @@ function palindromeDetector(s) {
         }
         // Adds individual reversed word to the array of reversed words.
         reversedArray.push(reversedAndJoined);
+        console.log(reversedArray);
 
     }
     // Loops over the array of reversed words.
