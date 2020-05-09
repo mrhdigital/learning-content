@@ -11,13 +11,21 @@ if(number <= 0) {
     console.log(isPrime);
     document.getElementById("result").innerHTML = isPrime;
 }
-else 
+
 for( var i = 2; i < number; i++) {
+    
     if(number % i === 0) {
         var isPrime = (`${number} is not a prime number`);
         console.log(isPrime);
         document.getElementById("result").innerHTML = isPrime;
+        var primeFound = true;
     }
 }
-}
 
+if (!primeFound){
+    var isPrime = (`${number} is a prime number`);
+    console.log(isPrime);
+    document.getElementById("result").innerHTML = isPrime;
+
+}
+}
