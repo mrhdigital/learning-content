@@ -4,8 +4,6 @@
 //* A Prime number is a number greater than one that can only be divided by one and itself.
 
 // Declare our primeCheck function
-var isPrimeNumber = window.prompt("Enter your number to check if is prime number");
-primeCheck(isPrimeNumber);
 function primeCheck(number) {
 if(number <= 0) {
     //var isPrime = "";
