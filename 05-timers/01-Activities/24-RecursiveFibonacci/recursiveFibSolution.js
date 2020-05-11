@@ -9,9 +9,13 @@ var fibonacci = function(n) {
     // Loop to pass the desired place into the resursive function to detemine 
     // the Fibinacci Number at that position
     for(var i = 1; i < n+1; i++) {
+
+        //push the calculated Fibonacci Number into the array
         answer.push(recursive(i));
 
     }
+
+    // Returns the answer
     return answer;
 };
 
