@@ -16,7 +16,7 @@ var simpleRecursion = function(n) {
      }
   
     
-} ;   
+}; 
 
   
   
