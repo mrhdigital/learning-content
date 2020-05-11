@@ -1,5 +1,9 @@
 // 1 1 2 3 5 8 13 21
+
+// Function to return the Fibonacci Sequence to a given number of places (n)
 var fibonacci = function(n) {
+
+    // Blank array to hold result
     var answer = [];
 
     for(var i = 1; i < n+1; i++) {
