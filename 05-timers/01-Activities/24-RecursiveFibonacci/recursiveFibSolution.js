@@ -6,6 +6,8 @@ var fibonacci = function(n) {
     // Blank array to hold result
     var answer = [];
 
+    // Loop to pass the desired place into the resursive function to detemine 
+    // the Fibinacci Number at that position
     for(var i = 1; i < n+1; i++) {
         answer.push(recursive(i));
 
