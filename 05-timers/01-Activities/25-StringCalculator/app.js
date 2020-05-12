@@ -12,6 +12,13 @@ function stringCalculator(string) {
     // we're checking in the swith statement.
 
     var splitString = string.toLowerCase().split(" ");
+
+    // Check to see if the array is the correct legth,
+    // and to see if the 1st and 3rd elements in the array have numeric values.
+    if(splitString.length !== 4  || isNaN(parseInt(splitString[1])) || isNaN(parseInt(splitString[3]))) {
+
+        
+    }
 }
 
 
