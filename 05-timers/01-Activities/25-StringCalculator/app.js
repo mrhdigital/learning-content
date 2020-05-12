@@ -16,8 +16,10 @@ function stringCalculator(string) {
     // Check to see if the array is the correct legth,
     // and to see if the 1st and 3rd elements in the array have numeric values.
     if(splitString.length !== 4  || isNaN(parseInt(splitString[1])) || isNaN(parseInt(splitString[3]))) {
+    
+        // If not, tell the user that we received an invalid request.
+        console.log("Invalid Request Format. Try Again");
 
-        
     }
 }
 
