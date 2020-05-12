@@ -5,6 +5,9 @@ var fibonacci = function(i) {
     for (var j = 1; j < i +1; j++) {
         result.push(recursive(j));
     }
+
+    document.getElementById("result").innerHTML = result.join(" ");
+
     return result;
 
 }
