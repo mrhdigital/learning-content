@@ -14,6 +14,7 @@ var fibonacci = function(n) {
         answer.push(recursive(i));
 
     }
+    document.getElementById("result").innerHTML = answer.join(" ");
 
     // Returns the answer
     return answer;
