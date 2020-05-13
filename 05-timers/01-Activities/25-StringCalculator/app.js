@@ -21,6 +21,16 @@ function stringCalculator(string) {
         console.log("Invalid Request Format. Try Again");
 
     }
+    else {
+
+        // Check the first element in the string for a matching calculator operation
+        switch (splitString[0]) {
+
+            // if the string is 'multiply'...
+            case "multiply":
+                
+        }
+    }
 }
 
 
