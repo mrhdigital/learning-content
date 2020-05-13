@@ -45,6 +45,15 @@ function stringCalculator(string) {
             return splitString[1] - splitString[3];
 
 
+            // If the string is "add"...
+            case "add":
+
+            // add the first and second number.
+            return parseInt(splitString[1] + parseInt(splitString[3]));
+
+            
+
+
 
         }
     }
