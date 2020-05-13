@@ -28,7 +28,12 @@ function stringCalculator(string) {
 
             // if the string is 'multiply'...
             case "multiply":
-                
+
+            // multiply the numbers.
+            return splitString[1] * splitString[3];
+
+            
+
         }
     }
 }
