@@ -38,6 +38,12 @@ function stringCalculator(string) {
             // divide the first number with the second.
             return splitString[1] / splitString[3];
 
+            // if the string is "subtract"...
+            case "subtract":
+
+            // subtract the first number from the third.
+            return splitString[1] - splitString[3];
+
 
 
         }
