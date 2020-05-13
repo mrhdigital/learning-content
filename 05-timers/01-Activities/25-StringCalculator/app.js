@@ -51,9 +51,11 @@ function stringCalculator(string) {
             // add the first and second number.
             return parseInt(splitString[1] + parseInt(splitString[3]));
 
-            
+            default:
 
-
+            // If the above aren't met, log to the console.
+            console.log("Error, please make sure your spelling is correct and try again");
+            break;
 
         }
     }
