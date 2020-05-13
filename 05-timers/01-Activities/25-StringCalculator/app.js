@@ -32,7 +32,13 @@ function stringCalculator(string) {
             // multiply the numbers.
             return splitString[1] * splitString[3];
 
-            
+            // If the string is "divide"...
+            case "divide":
+
+            // divide the first number with the second.
+            return splitString[1] / splitString[3];
+
+
 
         }
     }
