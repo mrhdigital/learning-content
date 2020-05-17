@@ -41,6 +41,9 @@
                 // Create CODE HERE to transfer content to HTML
                 $(".city").html("<h1>" + response.name + ": Weather Details </h1>")
                 $(".wind").html("Wind Speed: " + response.wind.speed);
+                $(".humidity").html("Huminity: " + response.main.humidity);
+                $(".temp").html("Temperature (F): " + response.main.temp);
+
 
                 // Create CODE HERE to calculate the temperature (converted from Kelvin)
                 // Hint: To convert from Kelvin to Fahrenheit: F = (K - 273.15) * 1.80 + 32
