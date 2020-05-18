@@ -66,6 +66,8 @@
 
                 // Create CODE HERE to transfer content to HTML
                $("#movie-view").html("<h1>" + response.Title + ": Movie Title </h1>")
+               $("#movie-view").text(JSON.stringify(response));
+
             })
         // =================================================================
       });
