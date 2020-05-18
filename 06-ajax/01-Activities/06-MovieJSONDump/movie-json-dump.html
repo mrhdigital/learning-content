@@ -46,7 +46,27 @@
         // =================================================================
 
         // CODE GOES HERE
+        // We then created an AJAX call to the  openWeatherMap API
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        })
+            // We store all of the retrieved data inside of an object called "response"
 
+            .then(function (response) {
+
+                // Create CODE HERE to Log the queryURL
+
+                console.log(queryURL);
+
+
+                // Create CODE HERE to log the resulting object
+                console.log(response);
+
+
+                // Create CODE HERE to transfer content to HTML
+               // $(".city").html("<h1>" + response.name + ": Weather Details </h1>")
+            })
         // =================================================================
       });
     </script>
