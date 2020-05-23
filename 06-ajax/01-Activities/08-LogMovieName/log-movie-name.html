@@ -88,6 +88,7 @@
       // We're adding the event listener to the document itself because it will
       // work for dynamically generated elements
       // $(".movies").on("click") will only add listeners to elements that are on the page at that time
+      $(document).on("click", ".movie", alertMovieName);
 
       // Calling the renderButtons function to display the intial buttons
       renderButtons();
