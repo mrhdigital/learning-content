@@ -41,8 +41,16 @@
         // YOUR CODE GOES HERE!!! HINT: You will need to create a new div to hold the JSON.
         // capturing the movie name from the data-attribute
         var movie = $(this).attr("data-name");
+
+       // Here we construct our URL
+
         var queryURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
 
+        // We then created an AJAX call to the  OMDB API
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        })
 
       }
 
