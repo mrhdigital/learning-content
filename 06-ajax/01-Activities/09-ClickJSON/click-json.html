@@ -39,6 +39,10 @@
       function displayMovieInfo() {
 
         // YOUR CODE GOES HERE!!! HINT: You will need to create a new div to hold the JSON.
+        // capturing the movie name from the data-attribute
+        var movie = $(this).attr("data-name");
+        var queryURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
+
 
       }
 
