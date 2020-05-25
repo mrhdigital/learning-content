@@ -54,11 +54,15 @@
           // YOUR CODE GOES HERE!!!
 
           // Create a div a hold the movie
-          var movieDive = $("<div class = 'movie'>");
+          var movieDiv = $("<div class = 'movie'>");
 
 
           // Retrieves the Rating Data
+          var rating = response.Rated;
           // Create an element to have the rating displayed
+
+          // Putting the entire movie above the previous movies
+          $("#movies-view").prepend(movieDiv);
 
         });
 
