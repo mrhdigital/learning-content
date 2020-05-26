@@ -73,7 +73,10 @@
             var pTwo = $("<p>").text("Released: " + released);
 
             // Displaying the release year
-            movieDiv.append(pTwo);    
+            movieDiv.append(pTwo);   
+            
+            // Storing the plot
+            var plot = response.Plot;
           
             // Putting the entire movie above the previous movies
           $("#movies-view").prepend(movieDiv);
