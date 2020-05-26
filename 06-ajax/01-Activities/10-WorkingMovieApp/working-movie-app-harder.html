@@ -60,14 +60,14 @@
           // Retrieves the Rating Data
           var rating = response.Rated;
           
-          // Create an element to have the rating displayed
-            var rating = response.Rated;
-
           // Created an element to have the rating displayed
           var pOne = $("<p>").text("Rating: " + rating);
             
             // Displaying the rating
             movieDiv.append(pOne);
+
+            // Storing the release year
+            var released = response.released;
           
             // Putting the entire movie above the previous movies
           $("#movies-view").prepend(movieDiv);
