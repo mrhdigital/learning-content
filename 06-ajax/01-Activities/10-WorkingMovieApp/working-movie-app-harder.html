@@ -67,7 +67,13 @@
             movieDiv.append(pOne);
 
             // Storing the release year
-            var released = response.released;
+            var released = response.Released;
+
+            // Creating an element to hold the release year
+            var pTwo = $("<p>").text("Released: " + released);
+
+            // Displaying the release year
+            movieDiv.append(pTwo);    
           
             // Putting the entire movie above the previous movies
           $("#movies-view").prepend(movieDiv);
