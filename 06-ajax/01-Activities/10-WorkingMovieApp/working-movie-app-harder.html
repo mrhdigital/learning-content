@@ -77,6 +77,15 @@
             
             // Storing the plot
             var plot = response.Plot;
+
+            // Creating an element to hold the plot 
+            var pThree = $("<p>").text("Plot: " + plot);
+
+            // Append the plot
+            movieDiv.append(pThree);
+            
+            // Retrieving the URL for the image
+            var imgURL = responde.Poster;
           
             // Putting the entire movie above the previous movies
           $("#movies-view").prepend(movieDiv);
