@@ -85,7 +85,13 @@
             movieDiv.append(pThree);
             
             // Retrieving the URL for the image
-            var imgURL = responde.Poster;
+            var imgURL = response.Poster;
+
+            // Creating an element to hold the image
+            var image = $("<img>").attr("src", imgURL);
+
+            // Appending the image
+            movieDiv.append(image);
           
             // Putting the entire movie above the previous movies
           $("#movies-view").prepend(movieDiv);
