@@ -29,6 +29,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
   function searchBandsInTown(artist) {
+
+    //var artistsName = artist;
+        var queryURL = "https://rest.bandsintown.com/artists/" + artist + "?app_id=codingbootcamp";
+
+        // Creates AJAX call for the specific movie button being clicked
+        $.ajax({
+          url: queryURL,
+          method: "GET"
+        }).then(function(response) {
+            console.log(response);
+
     // Add code to query the bands in town api searching for the artist received as an argument to this function
     // Using jQuery, append the following to the #artist-div :
     // The artist's name
@@ -37,6 +48,10 @@
     // The number of upcoming events for this artist
     // A link to the bandsintown url for this artist
     // Note: Append actual HTML elements, not just text
+    var artistInfo = "demo artist";
+    $("#artist-div").append(artistInfo);
+});
+
   }
 
   // Event handler for user clicking the select-artist button
