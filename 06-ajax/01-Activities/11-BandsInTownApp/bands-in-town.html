@@ -46,6 +46,7 @@
     var artistURL = $("<a>").attr("href", response.url).append(artistName);
     var artistImage = $("<img>").attr("src", response.thumb_url);
     var trackerCount = $("<h2>").text(response.tracker_count + " fans tracking this artist");
+    var upcomingEvents = $("<h2>").text(response.upcoming_event_count + " upcoming events");
     // The artists thumbnail image
     // The number of fans tracking this artist
     // The number of upcoming events for this artist
@@ -54,7 +55,7 @@
 
     // Empty the contents of the artist-div, append the new artist content
     $("#artist-div").empty();
-    $("#artist-div").append(artistURL, artistImage, trackerCount);
+    $("#artist-div").append(artistURL, artistImage, trackerCount, upcomingEvents);
 });
 
   }
