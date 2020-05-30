@@ -14,7 +14,7 @@
   <script type="text/javascript">
     // Create an event listner for cat-button
     $("#cat-button").on("click", function() {
-        //alert("Hello");
+        
 
       // Storing giphy API URL for a random cat image
       var queryURL = "https://api.giphy.com/v1/gifs/random?apikey=5siRB0jjirvJrobbHAQrHQWeJGv8jNLe&tag=cats";
@@ -27,7 +27,7 @@
 
       // After the data from the AJAX  request comes back
         .then(function(response) {
-            console.log("hello");
+           
             console.log(response);
 
         // Saving the image_original_url property
