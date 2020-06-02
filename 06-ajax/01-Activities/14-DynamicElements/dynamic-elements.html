@@ -48,12 +48,13 @@
         p.text("Rating: " + results[i].rating);
         console.log(p);
         // Make an image tag with jQuery and store it in a variable named animalImage.
-        var animalImage = $("img");
+        var animalImage = $("<img>");
         // Set the image's src to results[i]'s fixed_height.url.
         animalImage.attr("src", results[i].images.fixed_height.url);
         // Append the p variable to the animalDiv variable.
         animalDiv.append(p);
         // Append the animalImage variable to the animalDiv variable.
+        animalDiv.append(animalImage);
         // Prepend the animalDiv variable to the element with an id of gifs-appear-here.
         $("#gifs-appear-here").prepend(animalDiv);
 
