@@ -42,15 +42,18 @@
         // Make a div with jQuery and store it in a variable named animalDiv.
         var animalDiv = $("<div>");
         // Make a paragraph tag with jQuery and store it in a variable named p.
-        var p = $("<p>");
+        var p = $("<p>")
+        //.text("Rating: " + results[i].rating);
         // Set the inner text of the paragraph to the rating of the image in results[i].
-        p.text("Rating:" + results[i].rating);
+        p.text("Rating: " + results[i].rating);
         console.log(p);
         // Make an image tag with jQuery and store it in a variable named animalImage.
         // Set the image's src to results[i]'s fixed_height.url.
         // Append the p variable to the animalDiv variable.
+        animalDiv.append(p);
         // Append the animalImage variable to the animalDiv variable.
         // Prepend the animalDiv variable to the element with an id of gifs-appear-here.
+        $("#gifs-appear-here").prepend(animalDiv);
 
         // ============= put step 3 in between these dashes ======================
 
