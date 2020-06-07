@@ -19,8 +19,23 @@ var queryURLBase = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api
 // =========================================
 
 
+function runQuery(numArticles, queryURL) {
 
-
+    // AJAX Function
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).then(function(NYTData) {
+  
+      // Logging to Console
+      console.log("------------------");
+      console.log(queryURL);
+      console.log("------------------");
+      console.log(numArticles);
+      console.log(NYTData);
+  
+    });
+}
 
 // MAIN PROCESSES
 // =========================================
