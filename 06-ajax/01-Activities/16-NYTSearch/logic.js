@@ -11,6 +11,8 @@ var numResults = 0;
 var startYear = 0;
 var endYear = 0;
 
+// URL Base
+var queryURLBase = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=" + authKey;
 
 
 // FUNCTIONS
