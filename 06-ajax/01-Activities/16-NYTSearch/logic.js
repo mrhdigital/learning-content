@@ -39,7 +39,16 @@ function runQuery(numArticles, queryURL) {
 
 // MAIN PROCESSES
 // =========================================
-
+$("#search-btn").on("click", function(event) {
+    // This line allows us to take advantage of the HTML "submit" property
+    // This way we can hit enter on the keyboard and it registers the search
+    // (in addition to clicks).
+  
+    // Send the AJAX Call the newly assembled URL
+    runQuery(numResults, newURL);
+  
+  });
+  
 
 // 1. Retrieve user inputs and convert to variables
 // 2. Use those variable to run an AJAX call to the New York Times.
