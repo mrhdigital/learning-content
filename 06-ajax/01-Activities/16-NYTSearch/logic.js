@@ -63,8 +63,8 @@ function runQuery(numArticles, queryURL) {
         );
 
      // console.log(NYTData.response.docs[i].section_name);
-      console.log(NYTData.response.docs[i].pub_date);
-      console.log(NYTData.response.docs[i].web_url);
+      //console.log(NYTData.response.docs[i].pub_date);
+      //console.log(NYTData.response.docs[i].web_url);
     }
 
   });
