@@ -45,7 +45,8 @@ $("#search-btn").on("click", function(event) {
     // (in addition to clicks).
   
     // Send the AJAX Call the newly assembled URL
-    runQuery(numResults, newURL);
+    runQuery(10, "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=74623931" );
+    //runQuery(numResults, newURL);
   
   });
   
