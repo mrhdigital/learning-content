@@ -55,7 +55,10 @@
       // Then give it an ID in the following form:
       // "item-4" or "item-3" or "item-99", where the number is equal to toDoCount.
       // Then append the to-do "value" as text to this <p> element.
-
+        var toDoItem = $("<p>");
+         toDoItem.attr("id", "item-" + toDoCount);
+         toDoItem.append("" + toDoTask);
+         console.log(toDoItem);
 
       // Create a button with unique identifiers based on what number it is in the list. Again use jQuery to do this.
       // Give your button a data attribute called data-to-do and a class called "checkbox".
