@@ -38,12 +38,17 @@
     //  ============================= START CODING BELOW! =============================================
 
     // Create an initial toDoCount variable
+
+    var toDoCount = 0;
     //  On Click event associated with the add-to-do function
     $("#add-to-do").on("click", function(event) {
       // prevent form from submitting
       event.preventDefault();
 
       // Get the to-do "value" from the textbox and store it a variable
+      var toDoTask = $("#to-do").val().trim();
+      console.log(toDoTask);
+
 
 
       // Create a new variable that will hold a "<p>" tag.
