@@ -64,6 +64,8 @@
       // Give your button a data attribute called data-to-do and a class called "checkbox".
       // Lastly append the letter X inside.
       var toDoClose = $("<button");
+      toDoClose.attr("data-to-do", toDoCount);
+      toDoClose.addClass("checkbox");
 
 
       // Append the button to the to do item
