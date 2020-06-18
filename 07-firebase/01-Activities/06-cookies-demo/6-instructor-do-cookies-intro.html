@@ -70,9 +70,14 @@
       console.log(cookieName);
 
       // Display the recovered name
+      $("#greeting").text(cookieName);
+
     });
 
     // By default (upon load) recover the last cookie
+    var cookieName = readCookie("name");
+    $("#greeting").text(cookieName);
+
   </script>
 
 </body>
