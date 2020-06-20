@@ -74,6 +74,11 @@
       $("input[type='text']").val("");
 
       // Adding our new todo to our local list variable and adding it to local storage
+      list.push(val);
+      localStorage.setItem("todolist", JSON.stringify(list));
+
+      putOnPage();
+
     });
   </script>
 </body>
