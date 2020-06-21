@@ -65,6 +65,28 @@
       database.ref().set({
         clickCount: clickCounter
       });
+          // MAIN PROCESS + INITIAL CODE
+    // --------------------------------------------------------------------------------
+
+    // Using .on("value", function(snapshot)) syntax will retrieve the data
+    // from the database (both initially and every time something changes)
+    // This will then store the data inside the variable "snapshot". We could rename "snapshot" to anything.
+    database.ref().on("value", function(snapshot) {
+
+// Then we console.log the value of snapshot
+console.log(snapshot.val());
+
+// Then we change the html associated with the number.
+
+// Then update the clickCounter variable with data from the database.
+
+// If there is an error that Firebase runs into -- it will be stored in the "errorObject"
+// Again we could have named errorObject anything we wanted.
+}, function(errorObject) {
+
+// In case of error this will print the error
+});
+
 
       // Now! go to https://fir-click-counter-7cdb9.firebaseio.com/ to see the impact to the DB
     });
