@@ -92,7 +92,11 @@
       databaseURL: "https://fir-recent-user.firebaseio.com",
       storageBucket: "fir-recent-user.appspot.com"
     };
+
+    firebase.initializeApp(config);
+
     // Create a variable to reference the database
+    var database = firebase.database();
 
 
     // Capture Button Click
