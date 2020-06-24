@@ -82,6 +82,7 @@
 
       // Log the value of the various properties
     
+      console.log(snapshot.val().name);
 
       // Change the HTML
       $("#displayed-data").text(snapshot.val().name + " | " + snapshot.val().age + " | " + snapshot.val().phone);
