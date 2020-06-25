@@ -119,6 +119,13 @@
       age = $("#age-input").val().trim();
       comment = $("#comment-input").val().trim();
 
+      database.ref().set({
+        name: name,
+        email: email,
+        age: age,
+        comment: comment
+      });
+
 
 
     });
