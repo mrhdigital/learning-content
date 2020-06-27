@@ -14,6 +14,7 @@ firebase.initializeApp(config);
 // Assign the reference to the database to a variable named 'database'
 // var database = ...
 
+var database = firebase.database();
 
 // Initial Values
 var initialBid = 0;
