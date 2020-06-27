@@ -1,6 +1,14 @@
 // Initialize Firebase
 // Make sure to match the configuration to the script version number in the HTML
 // (Ex. 3.0 != 3.7.0)
+var config = {
+  apiKey: "AIzaSyCUa3OmzBQAV9MHxQg6Pgl2s5533V5qjEI",
+  authDomain: "coder-bay-fee9d.firebaseapp.com",
+  databaseURL: "https://coder-bay-fee9d.firebaseio.com",
+  storageBucket: "coder-bay-fee9d.appspot.com"
+};
+
+firebase.initializeApp(config);
 
 
 // Assign the reference to the database to a variable named 'database'
