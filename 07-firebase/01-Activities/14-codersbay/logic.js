@@ -19,8 +19,6 @@ var database = firebase.database();
 // Initial Values
 var initialBid = 0;
 var initialBidder = "No one :-(";
-var highPrice = initialBid;
-var highBidder = initialBidder;
 
 // --------------------------------------------------------------
 
@@ -34,6 +32,8 @@ database.ref().on("value", function(snapshot) {
     // Set the variables for highBidder/highPrice equal to the stored values in firebase.
     // highPrice = ...
     // highBidder = ...
+    highBidder = snapshot.val().highBidder;
+    highPrice = parseInt(snapshot.val().highPrice);
 
 
     // Change the HTML to reflect the stored values
