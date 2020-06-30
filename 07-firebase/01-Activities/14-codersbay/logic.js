@@ -35,11 +35,11 @@ database.ref().on("value", function(snapshot) {
     highBidder = snapshot.val().highBidder;
     highPrice = parseInt(snapshot.val().highPrice);
 
-
-    // Change the HTML to reflect the stored values
-
-
-    // Print the data to the console.
+  // If Firebase does not have highPrice and highBidder values stored, they remain the same as the
+  // values we set when we initialized the variables.
+  // In either case, we want to log the values to console and display them on the page.
+  console.log(highBidder);
+  console.log(highPrice);
 
 
   }
