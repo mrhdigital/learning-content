@@ -76,6 +76,10 @@ $("#submit-bid").on("click", function(event) {
   var bidderName = $("#bidder-name").val().trim();
   var bidderPrice = parseInt($("#bidder-price").val().trim());
 
+    // Log the Bidder and Price (Even if not the highest)
+    console.log(bidderName);
+    console.log(bidderPrice);
+  
 
   // Log the Bidder and Price (Even if not the highest)
   if (bidderPrice > highPrice) {
