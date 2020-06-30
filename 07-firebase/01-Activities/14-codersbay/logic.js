@@ -40,6 +40,9 @@ database.ref().on("value", function(snapshot) {
   // In either case, we want to log the values to console and display them on the page.
   console.log(highBidder);
   console.log(highPrice);
+  $("#highest-bidder").text(highBidder);
+  $("#highest-price").text(highPrice);
+
 
 
   }
