@@ -87,7 +87,12 @@ $("#submit-bid").on("click", function(event) {
     // Alert
     alert("You are now the highest bidder.");
 
-    // Save the new price in Firebase
+    // Save the new price in Firebase This will cause our "value" callback above to fire and update
+    // the UI.
+    database.ref().set({
+      highBidder: bidderName,
+      highPrice: bidderPrice
+    });
 
 
     // Log the new High Price
