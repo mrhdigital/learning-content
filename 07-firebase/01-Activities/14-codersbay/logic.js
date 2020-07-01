@@ -101,6 +101,8 @@ $("#submit-bid").on("click", function(event) {
 
 
     // Store the new high price and bidder name as a local variable
+    console.log(bidderName);
+    console.log(bidderPrice);
 
 
     // Change the HTML to reflect the new high price and bidder
