@@ -97,8 +97,6 @@ $("#submit-bid").on("click", function(event) {
 
     // Log the new High Price
     console.log("New High Price!");
-    console.log(bidderName);
-    console.log(bidderPrice);
 
 
 
