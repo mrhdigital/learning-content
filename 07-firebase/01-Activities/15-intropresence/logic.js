@@ -115,4 +115,6 @@ $("#restart-button").on("click", function() {
   console.log(clickCounter);
 
   // Change the HTML Values
+  $("#click-value").text(clickCounter);
+
 });
