@@ -68,6 +68,7 @@ database.ref("/clicks").on("value", function(snapshot) {
   console.log(clickCounter);
 
   // Change the HTML to reflect the local value in firebase.
+  $("#click-value").text(snapshot.val().clickCount);
 
   // Change the HTML Value using a variable (similar to the above)
 
