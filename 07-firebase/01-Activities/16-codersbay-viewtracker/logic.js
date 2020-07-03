@@ -19,6 +19,9 @@ var database = firebase.database();
 
 // --------------------------------------------------------------
 // Link to Firebase Database for viewer tracking
+// connectionsRef references a specific location in our database.
+// All of our connections will be stored in this directory.
+var connectionsRef = database.ref("/connections");
 
 
 // --------------------------------------------------------------
