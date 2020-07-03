@@ -21,9 +21,18 @@ var database = firebase.database();
 // Link to Firebase Database for viewer tracking
 // connectionsRef references a specific location in our database.
 // All of our connections will be stored in this directory.
+
 var connectionsRef = database.ref("/connections");
+// '.info/connected' is a special location provided by Firebase that is updated
+// every time the client's connection state changes.
+// '.info/connected' is a boolean value, true if the client is connected and false if they are not.
+var connectedRef = database.ref(".info/connected");
+
+// When the client's connection state changes...
+connectedRef.on("value", function(snap) {
 
 
+});
 // --------------------------------------------------------------
 // Initial Values
 var initialBid = 0;
