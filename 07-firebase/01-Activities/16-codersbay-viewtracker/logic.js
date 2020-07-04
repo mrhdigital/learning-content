@@ -35,6 +35,9 @@ if (snap.val()) {
 
       // Add user to the connections list.
     var con = connectionsRef.push(true);
+        // Remove user from the connection list when they disconnect.
+        con.onDisconnect().remove();
+
 
 }
 
