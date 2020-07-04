@@ -33,6 +33,9 @@ connectedRef.on("value", function(snap) {
 // If they are connected..
 if (snap.val()) {
 
+      // Add user to the connections list.
+    var con = connectionsRef.push(true);
+
 }
 
 });
