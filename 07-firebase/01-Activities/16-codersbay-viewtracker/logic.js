@@ -42,6 +42,9 @@ if (snap.val()) {
 }
 
 });
+
+// When first loaded or when the connections list changes...
+
 // --------------------------------------------------------------
 // Initial Values
 var initialBid = 0;
