@@ -30,7 +30,10 @@ var connectedRef = database.ref(".info/connected");
 
 // When the client's connection state changes...
 connectedRef.on("value", function(snap) {
+// If they are connected..
+if (snap.val()) {
 
+}
 
 });
 // --------------------------------------------------------------
