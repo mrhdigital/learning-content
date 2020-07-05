@@ -18,6 +18,13 @@ var config = {
 
 firebase.initializeApp(config);
 
+var database = firebase.database();
+
+// 2. Button for adding Employees
+$("#add-employee-btn").on("click", function(event) {
+  event.preventDefault();
+
+});
 // Example Time Math
 // -----------------------------------------------------------------------------
 // Assume Employee start date of January 1, 2015
