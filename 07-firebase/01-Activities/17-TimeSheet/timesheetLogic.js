@@ -8,6 +8,15 @@
 //    Then use moment.js formatting to set difference in months.
 // 5. Calculate Total billed
 
+// 1. Initialize Firebase
+var config = {
+  apiKey: "AIzaSyA_QypGPkcjPtylRDscf7-HQl8ribnFeIs",
+  authDomain: "time-sheet-55009.firebaseapp.com",
+  databaseURL: "https://time-sheet-55009.firebaseio.com",
+  storageBucket: "time-sheet-55009.appspot.com"
+};
+
+firebase.initializeApp(config);
 
 // Example Time Math
 // -----------------------------------------------------------------------------
