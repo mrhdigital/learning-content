@@ -44,7 +44,10 @@ if (snap.val()) {
 });
 
 // When first loaded or when the connections list changes...
+connectionsRef.on("value", function(snap) {
 
+  
+});
 // --------------------------------------------------------------
 // Initial Values
 var initialBid = 0;
