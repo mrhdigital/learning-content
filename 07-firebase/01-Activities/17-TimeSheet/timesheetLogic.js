@@ -30,6 +30,13 @@ $("#add-employee-btn").on("click", function(event) {
     var empStart = moment($("#start-input").val().trim(), "DD/MM/YY").format("X");
     var empRate = $("#rate-input").val().trim();
   
+    // Creates local "temporary" object for holding employee data
+  var newEmp = {
+    name: empName,
+    role: empRole,
+    start: empStart,
+    rate: empRate
+  };
 
 });
 // Example Time Math
