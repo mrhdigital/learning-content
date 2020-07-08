@@ -41,6 +41,10 @@ $("#add-employee-btn").on("click", function(event) {
   // Uploads employee data to the database
   database.ref().push(newEmp);
 
+  // Logs everything to console
+  console.log(newEmp.name);
+  console.log(newEmp.role);
+
 });
 // Example Time Math
 // -----------------------------------------------------------------------------
