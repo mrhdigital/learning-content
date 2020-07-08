@@ -44,6 +44,9 @@ $("#add-employee-btn").on("click", function(event) {
   // Logs everything to console
   console.log(newEmp.name);
   console.log(newEmp.role);
+  console.log(newEmp.start);
+  console.log(newEmp.rate);
+
 
 });
 // Example Time Math
