@@ -38,6 +38,9 @@ $("#add-employee-btn").on("click", function(event) {
     rate: empRate
   };
 
+  // Uploads employee data to the database
+  database.ref().push(newEmp);
+
 });
 // Example Time Math
 // -----------------------------------------------------------------------------
