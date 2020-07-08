@@ -47,6 +47,9 @@ $("#add-employee-btn").on("click", function(event) {
   console.log(newEmp.start);
   console.log(newEmp.rate);
 
+  // Alert
+  alert("Employee successfully added");
+
 
 });
 // Example Time Math
