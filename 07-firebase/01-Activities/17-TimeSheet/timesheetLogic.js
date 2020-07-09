@@ -58,6 +58,11 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
   console.log(childSnapshot.val());
 
+    // Store everything into a variable.
+    var empName = childSnapshot.val().name;
+    var empRole = childSnapshot.val().role;
+  
+
 });
 // Example Time Math
 // -----------------------------------------------------------------------------
