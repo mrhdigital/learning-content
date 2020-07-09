@@ -61,6 +61,9 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
     // Store everything into a variable.
     var empName = childSnapshot.val().name;
     var empRole = childSnapshot.val().role;
+    var empStart = childSnapshot.val().start;
+    var empRate = childSnapshot.val().rate;
+  
   
 
 });
