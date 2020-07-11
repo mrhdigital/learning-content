@@ -67,6 +67,8 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   // Employee Info
   console.log(empName);
   console.log(empRole);
+  console.log(empStart);
+  console.log(empRate);
 
 });
 // Example Time Math
