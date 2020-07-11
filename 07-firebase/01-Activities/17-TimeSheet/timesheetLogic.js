@@ -73,6 +73,10 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
     // Prettify the employee start
     var empStartPretty = moment.unix(empStart).format("MM/DD/YY");
 
+  // Calculate the months worked using hardcore math
+  // To calculate the months worked
+  var empMonths = moment().diff(moment(empStart, "X"), "months");
+  console.log(empMonths);
 
 });
 // Example Time Math
