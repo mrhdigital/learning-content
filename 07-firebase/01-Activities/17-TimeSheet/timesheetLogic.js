@@ -64,7 +64,9 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
     var empStart = childSnapshot.val().start;
     var empRate = childSnapshot.val().rate;
   
-  
+  // Employee Info
+  console.log(empName);
+  console.log(empRole);
 
 });
 // Example Time Math
