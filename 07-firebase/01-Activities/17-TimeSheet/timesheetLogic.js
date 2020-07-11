@@ -70,6 +70,10 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   console.log(empStart);
   console.log(empRate);
 
+    // Prettify the employee start
+    var empStartPretty = moment.unix(empStart).format("MM/DD/YY");
+
+
 });
 // Example Time Math
 // -----------------------------------------------------------------------------
